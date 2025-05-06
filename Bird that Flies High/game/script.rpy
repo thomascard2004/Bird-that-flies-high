@@ -5,6 +5,12 @@
 image bg_saladeaula = Transform( "sala_de_aula.png", zoom = 1.3)
 image thomas = Transform( "thomas_sf.png", zoom = 1.3)
 define principal = Character("Thomas")
+image castelo = Transform("castelo_em_ruinas.png", zoom = 1.3)
+image ricardo = Transform("rickauer_sf.png", zoom = 1.3)
+define aluno_2 = Character("Ricardo")
+image professor = Transform("professor.png", zoom = 0.8)
+image professor abaixado = Transform("professor_abaixado.png", zoom = 0.8)
+define prof = Character("Professor")
 
 
 # The game starts here.
@@ -21,13 +27,26 @@ label start:
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
+    show professor abaixado at truecenter
+
     show thomas at right
 
     # These display lines of dialogue.
 
-    principal "You've created a new Ren'Py game."
+    prof "A anatomia de um mago é bem simples de entender. Ele possui tudo que um humano possui com uma pequena adição."
 
-    principal "Once you add a story, pictures, and music, you can release it to the world!"
+    prof "Um mago tem um \"saco\" de magia que funciona como um coração e tem como função bombear magia pelo corpo do mago, assim como o coração bombeia sangue."
+
+    pause 
+
+    show ricardo at left
+    with dissolve
+
+    aluno_2 "BOO!"
+
+    aluno_2 "Sempre bom usar a magia para causar o caos."
+
+    
 
     # This ends the game.
 

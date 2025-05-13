@@ -2,16 +2,24 @@
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
-image bg_saladeaula = Transform( "sala_de_aula.png", zoom = 1.3)
+
+#BACKGROUNDS
+image bg_saladeaula = Transform( "bgs/sala_de_aula.png", zoom = 1.3)
 image thomas = Transform( "thomas_sf.png", zoom = 1.3)
-define principal = Character("Thomas")
-image castelo = Transform("castelo_em_ruinas.png", zoom = 1.3)
+
+image castelo = Transform("bgs/castelo_em_ruinas.png", zoom = 1.3)
 image ricardo = Transform("rickauer_sf.png", zoom = 1.3)
-define aluno_2 = Character("Auak")
+
 image professor = Transform("professor.png", zoom = 0.8)
 image professor abaixado = Transform("professor_abaixado.png", zoom = 0.8)
-define prof = Character("Professor")
+
 image auak = Transform("auak_sf.png", zoom=1.3)
+
+
+#PERSONAGENS
+define nerkk = Character("Thomas")
+define auak = Character("Auak")
+define prof = Character("Professor")
 
 transform small_zoom:
     zoom 0.8
@@ -26,13 +34,25 @@ label start:
 
     scene bg_saladeaula
 
+
+    menu escolha_jogador:
+
+        "Qual jogador você escolhe?"
+
+        "Nerkk.":
+
+            jump nerkk_start
+
+        "Auak.":
+
+            jump auak_start
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
-    show professor abaixado at truecenter
+    
 
-    show thomas at right
+    
 
     # These display lines of dialogue.
 
@@ -45,37 +65,25 @@ label start:
     show auak at left
     with dissolve
 
-    aluno_2 "BOO!"
+    auak "BOO!"
 
-    aluno_2 "Sempre bom usar a magia para causar o caos."
+    auak "Sempre bom usar a magia para causar o caos."
 
-    menu jogador:
-
-        "Qual jogador você escolhe?"
-
-        "Thomas.":
-            $ player = "Thomas"
-
-            jump cena_1
-
-        "Auak.":
-            $ player = "Auak"
-
-            jump cena_1
+    
 
 label cena_1:
 
     $ pts = 0
     $ maldade = 0
 
-    aluno_2 "Professor, se a magia é bombeada pelo corpo inteiro, por que precisamos usar as mãos para fazer magia?"
+    auak "Professor, se a magia é bombeada pelo corpo inteiro, por que precisamos usar as mãos para fazer magia?"
 
     prof "Excelente pergunta! Alguém sabe responder?"
 
     if player=="Thomas":
-        principal "Eu sei!"
+        nerkk "Eu sei!"
     else:
-        aluno_2 "Eu sei!"
+        auak "Eu sei!"
 
     menu:
         "Por que precisamos usar as mãos para fazer magia?"
@@ -109,12 +117,12 @@ label cena_2:
     pause
 
     if player=="Thomas":
-        aluno_2 "Como você sabe disso?"
+        auak "Como você sabe disso?"
         jump sim
     else:
-        principal "Quer saber como sei disso?"
+        nerkk "Quer saber como sei disso?"
         menu:
-            principal "Quer saber como sei disso?"
+            nerkk "Quer saber como sei disso?"
 
             "Sim!":
                 jump sim
@@ -124,12 +132,12 @@ label cena_2:
 
 label sim:
 
-    principal "Meu sonho sempre foi ser um biólogo mágico."
+    nerkk "Meu sonho sempre foi ser um biólogo mágico."
     if player=="Thomas":
-        aluno_2 "Que bacana! Nunca pensei muito no meu futuro, acho que sempre gostei de viver o presente."
+        auak "Que bacana! Nunca pensei muito no meu futuro, acho que sempre gostei de viver o presente."
     else:
-        principal "E você Auak? Qual é seu sonho?"
-        aluno_2 "Nunca pensei muito no meu futuro, acho que sempre gostei de viver o presente."
+        nerkk "E você Auak? Qual é seu sonho?"
+        auak "Nunca pensei muito no meu futuro, acho que sempre gostei de viver o presente."
     jump nao
 
 label nao:
@@ -166,7 +174,7 @@ label errou_2:
 label resto_2: 
     prof "Se um mago não tiver magia o suficiente para realizar o ato mágico, ele será realizado até o ponto em que o mago cessar a canalização de magia."
 
-    aluno_2 "O que acontece se a magia de um mago acabar?"
+    auak "O que acontece se a magia de um mago acabar?"
 
     prof "Ótima pergunta! Para um mago a magia é tão vital para sua saúde quanto o sangue. Quando um mago esgota sua magia, ele morre."
 
@@ -179,7 +187,7 @@ label resto_2:
     prof "Você pode chamar assim porque está usando da sua mente para fazer o que você deseja com a madeira, mas no fim das contas telecinese é 
     apenas um jeito que os humanos inventaram de explicar a magia que eles não entendem."
 
-    aluno_2 "Professor, eu tenho uma…"
+    auak "Professor, eu tenho uma…"
 
     play sound "boom.mp3"
 

@@ -2,9 +2,11 @@
 errors listed below, and try again.
 
 
-File "game/nerkk.rpy", line 68: expecting name after dot.
-    "Opção 1".:
-              ^
+The label xixi is defined twice, at File "game/nerkk.rpy", line 200:
+label xixi:
+and File "game/script.rpy", line 110:
+label xixi:
+
 
 Ren'Py Version: Ren'Py 8.3.7.25031702
-Tue May 13 08:57:50 2025
+Tue May 13 11:56:58 2025

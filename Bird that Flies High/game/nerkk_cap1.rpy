@@ -189,13 +189,61 @@ label resto_2:
 label boom_nerkk:
     menu:
         "Mandar Auak ir ver o que aconteceu.":
-            jump fingir
+            jump mandar
         "Investigar o que aconteceu.":
-            jump investigar_auak
+            jump investigar_nerkk
         "Se esconder embaixo das cadeiras.":
-            jump esconder
+            jump esconder_nerkk
         "Fazer xixi nas calças de medo.":
             jump xixi
+
+label mandar:
+    nerkk "Vai ver o que aconteceu Auak."
+
+    auak "Até estou curioso, mas não quero ir sozinho."
+
+    show professor abaixado at truecenter
+
+    prof "Descobri o motivo da explosão"
+
+    jump acontecimento_1
+
+label investigar_nerkk:
+    scene bg_exterior_saladeaula
+
+    show thomas at center
+
+    nerkk "Acho que o barulho veio daqui. Vou dar uma espiada."
+
+    jump acontecimento_1
+    
+
+
+label esconder_nerkk:
+    nerkk "Me avisa quando o professor voltar!"
+
+    hide thomas
+    with dissolve
+
+    auak "Meu Deus, que medroso."
+
+    pause
+
+    show professor abaixado at truecenter
+    with dissolve
+
+    prof "Cadê o Nerkk?"
+
+    auak "Ele se escondeu. Vou chamar ele."
+
+    auak "NERK VOLTA AQUI!"
+
+    show thomas
+    with dissolve
+
+    prof "Eu descobri o que foi."
+
+    jump acontecimento_1
 
 label xixi:
     show professor abaixado at truecenter
@@ -227,3 +275,145 @@ label acontecimento_1:
             jump opcao_3
         "Todos os professores viraram estátua":
             jump opcao_4
+
+label opcao_1:
+    scene poppotino
+
+    show thomas at left
+
+    nerkk "É um Poppotino Griffino! Ele gera 5 filhotes por minuto. Se não o pararmos ele pode destruir a escola!"
+
+    show professor at center
+
+    prof "Que bom que você apareceu Nerkk! Vou precisar muito da sua ajuda."
+
+    prof "Com o ataque do Poppotino Griffino eu tenho que ficar aqui tentando conter as gerações de filhotes dele, mas não é o suficiente para salvar a escola."
+
+    prof "Eu preciso que você vá até o castelo desolado de Bacallister e busque a melancia dourada. É a única coisa que pode acalmar o Poppotino Griffino."
+
+    prof "Uma última coisa. Leve este totem. Você saberá quando usá-lo."
+
+    prof "Agora vá de uma vez, mas não vá sozinho!"
+
+    scene bg_saladeaula
+
+    show auak at left
+
+    show thomas at right 
+    with dissolve
+
+    nerkk "O professor me mandou em uma missão de encontrar uma melancia dourada para acalmar um Poppotino Griffino. Você vem comigo."
+
+    auak "Como assim? Não entendi nada que você disse."
+
+    nerkk "Eu te explico no caminho...."
+
+    jump cap_2
+
+label opcao_2:
+    scene raizes
+
+    show thomas at left 
+
+    nerkk "São as raízes! Se elas continuarem crescendo vão destruir a escola!"
+
+    show professor at center
+
+    prof "Que bom que você apareceu Nerkk! Vou precisar muito da sua ajuda."
+
+    prof "Com o ataque das raízes eu tenho que ficar aqui tentando conter o crescimento delas, mas não é o suficiente para salvar a escola."
+
+    prof "Eu preciso que você vá até o castelo desolado de Bacallister e busque o pergaminho que contém o feitiço que irá parar de vez o cresimento delas. Sem esse feitiço eu eventualmente esgotarei minha magia tentando atrasar seu cresimento."
+
+    prof "Uma última coisa. Leve este totem. Você saberá quando usá-lo."
+
+    prof "Agora vá de uma vez, mas não vá sozinho!"
+
+    scene bg_saladeaula
+
+    show auak at left
+
+    show thomas at right 
+    with dissolve
+
+    nerkk "O professor me mandou em uma missão de encontrar um pergaminho para parar o cresimento das raízes. Você vem comigo."
+
+    auak "Como assim? Não entendi nada que você disse."
+
+    nerkk "Eu te explico no caminho...."
+
+    jump cap_2
+
+label opcao_3:
+    scene biblioteca
+
+    show thomas at left 
+
+    nerkk "Foi o pergaminho! Alguém o levou! O pergaminho da escola contém seus maiores segredos. Quem o tiver só pode querer destruir a escola."
+
+    show professor at center
+
+    prof "Que bom que você apareceu Nerkk! Vou precisar muito da sua ajuda."
+
+    prof "Com o sumiço do pergaminho eu tenho que ficar aqui tentando encontrá-lo já que eu conheço cada canto desse lugar. Estamos fritos se eu não o encontrar."
+
+    prof "Eu preciso que você vá até o castelo desolado de Bacallister e busque o pergaminho irmão que contém o feitiço que irá destruir o pergaminho dessa escola. Eles ficam separados para permitir que possamos nos defender caso o nosso pergaminho desapareça."
+
+    prof "Uma última coisa. Leve este totem. Você saberá quando usá-lo."
+
+    prof "Agora vá de uma vez, mas não vá sozinho!"
+
+    scene bg_saladeaula
+
+    show auak at left
+
+    show thomas at right 
+    with dissolve
+
+    nerkk "O professor me mandou em uma missão de encontrar um pergaminho para se proteger do sumiço do pergaminho da escola. Você vem comigo."
+
+    auak "Como assim? Não entendi nada que você disse."
+
+    nerkk "Eu te explico no caminho...."
+
+
+    jump cap_2    
+
+label opcao_4:
+    scene professores
+
+    show thomas at left 
+
+    nerkk "Os professores! Todos viraram estátua! E agora? Como podemos resolver isso?"
+
+    show professor at center
+
+    prof "Que bom que você apareceu Nerkk! Vou precisar muito da sua ajuda."
+
+    nerkk "Professor! Que bom que você está bem! "
+
+    prof "Se eu não estivesse em aula, teria ficado assim também."
+
+    prof "Com os professores todos pretrificados eu tenho que ficar aqui de apoio aos alunos. Muitos irão ficar com medo."
+
+    prof "Eu preciso que você vá até o castelo desolado de Bacallister e busque a lágrima de medusa. Somente com ela podemos trazê-los de volta."
+
+    prof "Uma última coisa. Leve este totem. Você saberá quando usá-lo."
+
+    prof "Agora vá de uma vez, mas não vá sozinho!"
+
+    scene bg_saladeaula
+
+    show auak at left
+
+    show thomas at right 
+    with dissolve
+
+    nerkk "O professor me mandou em uma missão de encontrar a lágrima de medusa para trazer os professores petrificados de volta. Você vem comigo."
+
+    auak "Como assim? Não entendi nada que você disse."
+
+    nerkk "Eu te explico no caminho...."
+
+
+    jump cap_2    

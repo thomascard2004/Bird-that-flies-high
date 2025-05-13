@@ -5,15 +5,17 @@
 
 #BACKGROUNDS
 image bg_saladeaula = Transform( "bgs/sala_de_aula.png", zoom = 1.3)
-image thomas = Transform( "thomas_sf.png", zoom = 1.3)
+image bg_exterior_saladeaula = Transform("bgs/exterior_sala.png", zoom=1.3)
 
 image castelo = Transform("bgs/castelo_em_ruinas.png", zoom = 1.3)
 image ricardo = Transform("rickauer_sf.png", zoom = 1.3)
-
+image thomas = Transform( "thomas_sf.png", zoom = 1.3)
+image thomas transparente = Transform( "thomas_sf.png", zoom = 1.3, alpha=0.6)
 image professor = Transform("professor.png", zoom = 0.8)
 image professor abaixado = Transform("professor_abaixado.png", zoom = 0.8)
 
 image auak = Transform("auak_sf.png", zoom=1.3)
+image auak deitado = Transform("auak_sf.png", zoom=1.3, rotate=90)
 
 
 #PERSONAGENS
@@ -191,13 +193,26 @@ label resto_2:
 
     play sound "boom.mp3"
 
-    prof "Por hoje ficamos por aqui turma. Estão dispensados."
+    nerkk "O que foi isso?"
+
+    prof "Fiquem aqui, eu vou verificar o que foi isso!"
+
     hide professor abaixado
     with dissolve
 
-    player "Que aula legal!"
+    if player=="Thomas":
+        jump boom_nerkk
+    else:
+        jump boom_auak
 
-    jump cena_fora
+label xixi:
+    show professor abaixado at truecenter
+    with dissolve
+
+    prof ""
+
+
+
 
 
 

@@ -1,28 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 136, in script
-    if player=="Thomas":
-  File "game/script.rpy", line 136, in <module>
-    if player=="Thomas":
-NameError: name 'player' is not defined
+  File "game/auak.rpy", line 63, in script
+    jump opcao_4
+ScriptError: could not find label 'opcao_4'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 136, in script
-    if player=="Thomas":
-  File "C:\Users\thoma\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 1856, in execute
-    if renpy.python.py_eval(condition):
-  File "C:\Users\thoma\Downloads\renpy-8.3.6-sdk\renpy\python.py", line 1218, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "C:\Users\thoma\Downloads\renpy-8.3.6-sdk\renpy\python.py", line 1211, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 136, in <module>
-    if player=="Thomas":
-NameError: name 'player' is not defined
+  File "game/auak.rpy", line 63, in script
+    jump opcao_4
+  File "C:\Users\Usuario\Documents\renpy\renpy-8.3.7-sdk\renpy\ast.py", line 1712, in execute
+    rv = renpy.game.script.lookup(target)
+  File "C:\Users\Usuario\Documents\renpy\renpy-8.3.7-sdk\renpy\script.py", line 1103, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'opcao_4'.
 
-Windows-10-10.0.26100 AMD64
+Windows-10-10.0.22621 AMD64
 Ren'Py 8.3.7.25031702
 Kaua 1.0
-Mon May 12 22:38:56 2025
+Tue May 13 09:10:29 2025

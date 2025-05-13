@@ -19,6 +19,8 @@ label auak_start:
 
     prof "Excelente pergunta! Alguém sabe responder?"
 
+    show thomas at left
+
     nerkk "Eu sei! Para canalizar a magia através das mãos."
 
     jump acertou_1
@@ -30,11 +32,13 @@ label boom_auak:
         "Investigar o que aconteceu.":
             jump investigar_auak
         "Se esconder.":
-            jump hide
+            jump esconder
         "Fazer xixi nas calças de medo.":
             jump xixi
 
 label fingir:
+    $ maldade += 1
+
     show auak deitado
 
     auak "Thomas! Me ajuda!"
@@ -45,9 +49,11 @@ label fingir:
 
     nerkk "OK! Toma então."
 
-    
+    show thomas transparente
 
-    return
+    pause
+
+    jump prof_voltou
 
 label investigar_auak:
     scene bg_exterior_saladeaula

@@ -10,7 +10,7 @@ image bg_exterior_saladeaula = Transform("bgs/exterior_sala.png", zoom=1.3)
 image castelo = Transform("bgs/castelo_em_ruinas.png", zoom = 1.3)
 image ricardo = Transform("rickauer_sf.png", zoom = 1.3)
 image thomas = Transform( "thomas_sf.png", zoom = 1.3)
-image thomas transparente = Transform( "thomas_sf.png", zoom = 1.3, alpha=0.6)
+image thomas transparente = Transform( "thomas_sf.png", zoom = 1.3, alpha=0.7)
 image professor = Transform("professor.png", zoom = 0.8)
 image professor abaixado = Transform("professor_abaixado.png", zoom = 0.8)
 
@@ -35,13 +35,13 @@ label start:
     # images directory to show it.
 
     scene bg_saladeaula
-
+    $ covardia = 0
 
     menu escolha_jogador:
 
         "Qual jogador você escolhe?"
 
-        "Nerkk.":
+        "Thomas.":
 
             jump nerkk_start
 
@@ -209,7 +209,37 @@ label xixi:
     show professor abaixado at truecenter
     with dissolve
 
-    prof ""
+    play sound "xixi.mp3"
+
+    prof "Que barulho é esse?"
+
+    player "Nada professor. Conseguiu descobrir o que aconteceu?"
+
+    prof "Consegui! A causa da explosão foi..."
+
+    menu:
+        "Escolha a causa da explosão."
+
+        "Opção 1.":
+            jump opcao_1
+        "Opção 2.":
+            jump opcao_2
+        "Opção 3.":
+            jump opcao_3
+        "Opção 4.":
+            jump opcao_4
+
+label esconder:
+    player "Me avisa quando o professor voltar!"
+
+    if player == "Thomas":
+        hide thomas
+        with dissolve
+    else:
+        hide auak
+        with dissolve
+
+    return
 
 
 
@@ -219,9 +249,9 @@ label xixi:
 label cena_fora:
     scene castelo
 
-    show ricardo at small_zoom, Position(xalign=0.25, yalign=2)
+    show ricardo at small_zoom, right
     show thomas  at small_zoom, center
-    show auak    at small_zoom, Position(xalign=0.75, yalign=2)
+    show auak    at small_zoom, left
 
     pause
     return

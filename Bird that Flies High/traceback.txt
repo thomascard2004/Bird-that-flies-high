@@ -1,22 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/auak.rpy", line 63, in script
-    jump opcao_4
-ScriptError: could not find label 'opcao_4'.
+  File "game/auak.rpy", line 54, in script
+    jump prof_voltou
+ScriptError: could not find label 'prof_voltou'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/auak.rpy", line 63, in script
-    jump opcao_4
+  File "game/auak.rpy", line 54, in script
+    jump prof_voltou
   File "C:\Users\Usuario\Documents\renpy\renpy-8.3.7-sdk\renpy\ast.py", line 1712, in execute
     rv = renpy.game.script.lookup(target)
   File "C:\Users\Usuario\Documents\renpy\renpy-8.3.7-sdk\renpy\script.py", line 1103, in lookup
     raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'opcao_4'.
+ScriptError: could not find label 'prof_voltou'.
 
 Windows-10-10.0.22621 AMD64
 Ren'Py 8.3.7.25031702
 Kaua 1.0
-Tue May 13 09:10:29 2025
+Tue May 13 09:39:11 2025

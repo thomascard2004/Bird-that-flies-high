@@ -45,7 +45,7 @@ label boom_nerkk:
         "Escolha uma ação"
 
         "Se esconder embaixo das cadeiras!":
-            jump hide
+            jump esconder
         "Ir investigar o que aconteceu.":
             jump investigar_nerkk
         "Fazer xixi nas calças de medo.":

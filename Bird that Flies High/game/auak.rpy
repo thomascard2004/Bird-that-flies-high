@@ -10,8 +10,7 @@ label auak_start:
 
     prof "Um mago tem um \"saco\" de magia que funciona como um coração e tem como função bombear magia pelo corpo do mago, assim como o coração bombeia sangue."
 
-    $ pts = 0
-    $ maldade = 0
+    
 
     show auak at right
 
@@ -67,7 +66,7 @@ label investigar_auak:
     menu:
         "Escolha a causa da explosão."
 
-        "Opção 1.":
+        "Foi o Poppotino Griffino.":
             jump opcao_1
         "Opção 2.":
             jump opcao_2

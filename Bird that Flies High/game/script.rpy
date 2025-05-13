@@ -13,13 +13,14 @@ image thomas = Transform( "thomas_sf.png", zoom = 1.3)
 image thomas transparente = Transform( "thomas_sf.png", zoom = 1.3, alpha=0.7)
 image professor = Transform("professor.png", zoom = 0.8)
 image professor abaixado = Transform("professor_abaixado.png", zoom = 0.8)
-
+image bolsa = Transform("personagens/bolsa.png", zoom=0.8)
+image popotino = Transform("personagens/popotino.png", zoom=1.3)
 image auak = Transform("auak_sf.png", zoom=1.3)
 image auak deitado = Transform("auak_sf.png", zoom=1.3, rotate=90)
 
 
 #PERSONAGENS
-define nerkk = Character("Thomas")
+define nerkk = Character("Nerkk")
 define auak = Character("Auak")
 define prof = Character("Professor")
 
@@ -36,12 +37,15 @@ label start:
 
     scene bg_saladeaula
     $ covardia = 0
+    $ pts = 0
+    $ maldade = 0
+    $ opcao = ""
 
     menu escolha_jogador:
 
         "Qual jogador você escolhe?"
 
-        "Thomas.":
+        "Nerkk.":
 
             jump nerkk_start
 
@@ -74,33 +78,6 @@ label start:
     
 
 label cena_1:
-
-    $ pts = 0
-    $ maldade = 0
-
-    auak "Professor, se a magia é bombeada pelo corpo inteiro, por que precisamos usar as mãos para fazer magia?"
-
-    prof "Excelente pergunta! Alguém sabe responder?"
-
-    if player=="Thomas":
-        nerkk "Eu sei!"
-    else:
-        auak "Eu sei!"
-
-    menu:
-        "Por que precisamos usar as mãos para fazer magia?"
-
-        "Porque as maõs são a parte mais importante do corpo.":
-            jump errou_1
-        
-        "Para canalizar a magia através das mãos.":
-            jump acertou_1
-
-        "Porque as mãos cresceram geneticamente com propósitos místicos.":
-            jump errou_1
-        
-        "Porque as mãos são a parte do corpo que mais entra em contato físico com o mundo.":
-            jump errou_1
         
     label acertou_1:
         $ pts += 1
@@ -118,7 +95,7 @@ label cena_2:
 
     pause
 
-    if player=="Thomas":
+    if player=="Nerkk":
         auak "Como você sabe disso?"
         jump sim
     else:
@@ -135,7 +112,7 @@ label cena_2:
 label sim:
 
     nerkk "Meu sonho sempre foi ser um biólogo mágico."
-    if player=="Thomas":
+    if player=="Nerkk":
         auak "Que bacana! Nunca pensei muito no meu futuro, acho que sempre gostei de viver o presente."
     else:
         nerkk "E você Auak? Qual é seu sonho?"
@@ -220,7 +197,7 @@ label xixi:
     menu:
         "Escolha a causa da explosão."
 
-        "Opção 1.":
+        "Foi o Poppotino Griffino.":
             jump opcao_1
         "Opção 2.":
             jump opcao_2
@@ -232,15 +209,34 @@ label xixi:
 label esconder:
     player "Me avisa quando o professor voltar!"
 
-    if player == "Thomas":
+    if player == "Nerkk":
         hide thomas
         with dissolve
     else:
         hide auak
         with dissolve
+    
+    jump prof_voltou
 
     return
 
+label prof_voltou:
+    show professor abaixado
+    with dissolve
+
+    prof "Oi pessoal. Consegui descobrir o que aconteceu. A causa da explosão foi..."
+
+    menu:
+        "Escolha a causa da explosão."
+
+        "Foi o Poppotino Griffino.":
+            jump opcao_1
+        "Opção 2.":
+            jump opcao_2
+        "Opção 3.":
+            jump opcao_3
+        "Opção 4.":
+            jump opcao_4
 
 
 

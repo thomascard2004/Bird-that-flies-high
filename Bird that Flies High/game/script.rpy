@@ -18,6 +18,9 @@ image popotino = Transform("personagens/popotino.png", zoom=1.3)
 image auak = Transform("auak_sf.png", zoom=1.3)
 image auak deitado = Transform("auak_sf.png", zoom=1.3, rotate=90)
 
+image falcao_voando = Transform("falcao_voando.png", zoom=1.3)
+image falcao_parado = Transform("falcao_parado.png", zoom=1.3)
+
 
 #PERSONAGENS
 define nerkk = Character("Nerkk")
@@ -26,6 +29,7 @@ define prof = Character("Professor")
 define ricas = Character("RiKauer")
 define pagesh = Character("Pagesh")
 define pint = Character("Moça da Pintura")
+define falcao = Character("Falcão")
 
 transform small_zoom:
     zoom 0.8
@@ -38,7 +42,8 @@ label start:
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 
-    jump castelo_inside
+    jump cap_3start
+    # jump castelo_inside
     scene bg_saladeaula
     $ covardia = 0
     $ pts = 0
@@ -50,12 +55,11 @@ label start:
         "Qual jogador você escolhe?"
 
         "Nerkk.":
-
             jump nerkk_start
 
         "Auak.":
-
             jump auak_start
+    
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
@@ -64,97 +68,97 @@ label start:
 
     
 
-    # These display lines of dialogue.
+#     # These display lines of dialogue.
 
-    prof "A anatomia de um mago é bem simples de entender. Ele possui tudo que um humano possui com uma pequena adição."
+#     prof "A anatomia de um mago é bem simples de entender. Ele possui tudo que um humano possui com uma pequena adição."
 
-    prof "Um mago tem um \"saco\" de magia que funciona como um coração e tem como função bombear magia pelo corpo do mago, assim como o coração bombeia sangue."
+#     prof "Um mago tem um \"saco\" de magia que funciona como um coração e tem como função bombear magia pelo corpo do mago, assim como o coração bombeia sangue."
 
-    pause 
+#     pause 
 
-    show auak at left
-    with dissolve
+#     show auak at left
+#     with dissolve
 
-    auak "BOO!"
+#     auak "BOO!"
 
-    auak "Sempre bom usar a magia para causar o caos."
+#     auak "Sempre bom usar a magia para causar o caos."
 
     
 
-label sim:
+# label sim:
 
-    nerkk "Meu sonho sempre foi ser um biólogo mágico."
-    if player=="Nerkk":
-        auak "Que bacana! Nunca pensei muito no meu futuro, acho que sempre gostei de viver o presente."
-    else:
-        nerkk "E você Auak? Qual é seu sonho?"
-        auak "Nunca pensei muito no meu futuro, acho que sempre gostei de viver o presente."
-    jump nao
+#     nerkk "Meu sonho sempre foi ser um biólogo mágico."
+#     if player=="Nerkk":
+#         auak "Que bacana! Nunca pensei muito no meu futuro, acho que sempre gostei de viver o presente."
+#     else:
+#         nerkk "E você Auak? Qual é seu sonho?"
+#         auak "Nunca pensei muito no meu futuro, acho que sempre gostei de viver o presente."
+#     jump nao
 
-label nao:
+# label nao:
 
-    prof "Como eu ia dizendo, a magia flui pelo corpo inteiro, quando usamos as mãos estamos apenas canalizando a magia em uma parte do corpo em que temos pleno controle."
+#     prof "Como eu ia dizendo, a magia flui pelo corpo inteiro, quando usamos as mãos estamos apenas canalizando a magia em uma parte do corpo em que temos pleno controle."
 
-    prof "Algúem sabe quais são os pré requisitos para realizar uma magia bem sucedida?"
+#     prof "Algúem sabe quais são os pré requisitos para realizar uma magia bem sucedida?"
 
-    player "Eu!"
+#     player "Eu!"
 
-    menu:
-        "Quais são os pré requisitos para realizar uma magia bem sucedida?"
+#     menu:
+#         "Quais são os pré requisitos para realizar uma magia bem sucedida?"
 
-        "Ter criatividade e ter a quantidade de magia necessária com excedente saudável":
-            jump acertou_2
-        "Calma e paciência":
-            jump errou_2
-        "Foco e conhecimento":
-            jump errou_2
-        "Disruptividade e moedas de ouro":
-            jump errou_2
+#         "Ter criatividade e ter a quantidade de magia necessária com excedente saudável":
+#             jump acertou_2
+#         "Calma e paciência":
+#             jump errou_2
+#         "Foco e conhecimento":
+#             jump errou_2
+#         "Disruptividade e moedas de ouro":
+#             jump errou_2
 
 
-label esconder:
-    player "Me avisa quando o professor voltar!"
+# label esconder:
+#     player "Me avisa quando o professor voltar!"
 
-    if player == "Nerkk":
-        hide thomas
-        with dissolve
-    else:
-        hide auak
-        with dissolve
+#     if player == "Nerkk":
+#         hide thomas
+#         with dissolve
+#     else:
+#         hide auak
+#         with dissolve
     
-    jump prof_voltou
+#     jump prof_voltou
 
-    return
+#     return
 
-label prof_voltou:
-    show professor abaixado
-    with dissolve
+# label prof_voltou:
+#     show professor abaixado
+#     with dissolve
 
-    prof "Oi pessoal. Consegui descobrir o que aconteceu. A causa da explosão foi..."
+#     prof "Oi pessoal. Consegui descobrir o que aconteceu. A causa da explosão foi..."
 
-    menu:
-        "Escolha a causa da explosão."
+#     menu:
+#         "Escolha a causa da explosão."
 
-        "Foi o Poppotino Griffino.":
-            jump opcao_1
-        "Opção 2.":
-            jump opcao_2
-        "Opção 3.":
-            jump opcao_3
-        "Opção 4.":
-            jump opcao_4
-
-
+#         "Foi o Poppotino Griffino.":
+#             jump opcao_1
+#         "Opção 2.":
+#             jump opcao_2
+#         "Opção 3.":
+#             jump opcao_3
+#         "Opção 4.":
+#             jump opcao_4
 
 
 
-label cena_fora:
-    scene castelo
 
-    show ricardo at small_zoom, right
-    show thomas  at small_zoom, center
-    show auak    at small_zoom, left
 
-    pause
-    return
+# label cena_fora:
+#     scene castelo
+
+#     show ricardo at small_zoom, right
+#     show thomas  at small_zoom, center
+#     show auak    at small_zoom, left
+
+#     pause
+#     return
 

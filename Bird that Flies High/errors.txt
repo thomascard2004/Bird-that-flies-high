@@ -2,9 +2,23 @@
 errors listed below, and try again.
 
 
-File "game/auak.rpy", line 49: end of line expected.
-    jump jump cena_1_auak
-              ^
+The label resto_2 is defined twice, at File "game/auak.rpy", line 96:
+label resto_2: 
+and File "game/nerkk_cap1.rpy", line 156:
+label resto_2: 
+
+
+The label xixi is defined twice, at File "game/auak.rpy", line 207:
+label xixi:
+and File "game/nerkk_cap1.rpy", line 248:
+label xixi:
+
+
+The label acontecimento_1 is defined twice, at File "game/auak.rpy", line 223:
+label acontecimento_1:
+and File "game/nerkk_cap1.rpy", line 264:
+label acontecimento_1:
+
 
 Ren'Py Version: Ren'Py 8.3.7.25031702
-Wed May 14 12:26:58 2025
+Wed May 14 18:29:01 2025

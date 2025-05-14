@@ -1,22 +1,24 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/nerkk_cap4.rpy", line 38, in script
-    jump castelo_rebuild
-ScriptError: could not find label 'castelo_rebuild'.
+  File "game/nerkk_cap3.rpy", line 18, in script
+    ricardo "Certo, vamos lá."
+Exception: Sayer 'ricardo' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/nerkk_cap4.rpy", line 38, in script
-    jump castelo_rebuild
-  File "C:\Users\thoma\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 1712, in execute
-    rv = renpy.game.script.lookup(target)
-  File "C:\Users\thoma\Downloads\renpy-8.3.6-sdk\renpy\script.py", line 1103, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'castelo_rebuild'.
+  File "game/nerkk_cap3.rpy", line 18, in script
+    ricardo "Certo, vamos lá."
+  File "/home/enzo/Downloads/renpy-8.3.7-sdk/renpy/ast.py", line 2586, in execute
+    Say.execute(self)
+  File "/home/enzo/Downloads/renpy-8.3.7-sdk/renpy/ast.py", line 583, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "/home/enzo/Downloads/renpy-8.3.7-sdk/renpy/ast.py", line 472, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'ricardo' is not defined.
 
-Windows-10-10.0.26100 AMD64
+Linux-6.12.10-76061203-generic-x86_64-with-glibc2.35 x86_64
 Ren'Py 8.3.7.25031702
 Kaua 1.0
-Wed May 14 10:56:52 2025
+Wed May 14 18:30:55 2025

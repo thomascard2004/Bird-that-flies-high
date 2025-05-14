@@ -46,7 +46,7 @@ label auak_start:
         menu:
             "Deseja responder?"
             "Não responder":
-                jump jump cena_1_auak
+                jump cena_1_auak
             "Responder":
                 jump responder
 
@@ -85,7 +85,7 @@ label cena_1_auak:
 
 label acertou_2_auak:
     prof "Muito bem! Você está corretíssimo! As únicas coisas que limitam a capacidade mágica de um mago são a sua criatividade e se ele possui magia o suficiente para realizar o ato mágico que deseja."
-    
+
     jump resto_2
 
 label errou_2_auak:

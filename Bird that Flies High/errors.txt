@@ -2,11 +2,9 @@
 errors listed below, and try again.
 
 
-The label start is defined twice, at File "game/nerkk_cap4.rpy", line 1:
-label start:
-and File "game/script.rpy", line 32:
-label start:
-
+File "game/auak.rpy", line 49: end of line expected.
+    jump jump cena_1_auak
+              ^
 
 Ren'Py Version: Ren'Py 8.3.7.25031702
-Wed May 14 10:40:28 2025
+Wed May 14 12:26:58 2025

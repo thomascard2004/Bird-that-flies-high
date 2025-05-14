@@ -1,6 +1,5 @@
-# label nerkk_start:
+label auak_start:
 
-    jump cap_4start
     
     $ player = "Auak"
 
@@ -37,7 +36,6 @@
         "Porque as mãos são a parte do corpo que mais entra em contato físico com o mundo.":
             jump errou_1_auak
 
-    #nerkk
 
     label acertou_1_auak:
         $ pts += 1
@@ -45,12 +43,12 @@
         prof "Muito bem! Acertou em cheio! As mãos são importantes porque são a forma de canalizar a magia através do corpo, mas existem outras formas de canalizar magia, como varinhas ou outros objetos."
         nerkk "Como você sabe disso?"
 
-	menu:
-	    "Deseja responder?":
-		"Não responder":
-		    jump jump cena_1_auak
-		"Responder":
-		    jump responder
+        menu:
+            "Deseja responder?"
+            "Não responder":
+                jump jump cena_1_auak
+            "Responder":
+                jump responder
 
         
 label responder:

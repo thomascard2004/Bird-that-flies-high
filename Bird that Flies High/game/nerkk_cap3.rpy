@@ -1,6 +1,6 @@
 label cap_3start:
 
-    scene floresta
+    scene trilha
 
     show nerkk at right
     show auak at left
@@ -57,7 +57,7 @@ label ave:
 
 
 label caminho_lago:
-    scene lago 
+    scene lago2
 
     show nerkk at right
     show ricardo at left
@@ -126,6 +126,18 @@ label caminho_floresta:
     pagesh "Cuidado onde pisam e com o que tocam."
     "Vocês adentram mais a fundo na floresta. Após alguma caminhada, encontram árvores com frutas exóticas e brilhantes."
     
+    jump Frutas
+
+label Frutas:
+    
+    scene floresta_fruta
+
+    show nerkk at right
+    show ricardo at left
+    show auak:
+        xpos 0.6
+        ypos 0.3
+
     ricas "Olha!!! Que frutas são essas? Parecem uma delica...."
     pagesh "Desconfio de coisas que brilham demais na natureza, Ricas."
 
@@ -161,7 +173,7 @@ label nao_comer_fruta_magica:
 
 
 label evento_fenix:
-    scene floresta_em_chamas 
+    scene Fenix 
     show nerkk at right
     show ricardo at left
     show auak:

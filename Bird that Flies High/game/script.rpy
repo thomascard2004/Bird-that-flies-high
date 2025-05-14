@@ -7,6 +7,13 @@
 image bg_saladeaula = Transform( "bgs/sala_de_aula.png", zoom = 1.3)
 image bg_exterior_saladeaula = Transform("bgs/exterior_sala.png", zoom=1.3)
 
+image floresta = Transform("bgs/floresta.png", zoom=1.3)
+image floresta_densa = Transform("bgs/floresta_densa.png", zoom=1.3)
+image lago2 = Transform("bgs/lago2.png", zoom=1.3)
+image Fenix = Transform("bgs/Fenix.png", zoom=1.3)
+image trilha = Transform("bgs/trilha.png", zoom=1.3)
+image floresta_fruta = Transform("bgs/florestasFrutas.png", zoom=1.3)
+
 image castelo = Transform("bgs/castelo_em_ruinas.png", zoom = 1.3)
 image ricardo = Transform("rickauer_sf.png", zoom = 1.3)
 image nerkk = Transform( "thomas_sf.png", zoom = 1.3)
@@ -18,8 +25,8 @@ image popotino = Transform("personagens/popotino.png", zoom=1.3)
 image auak = Transform("auak_sf.png", zoom=1.3)
 image auak deitado = Transform("auak_sf.png", zoom=1.3, rotate=90)
 
-image falcao_voando = Transform("falcao_voando.png", zoom=1.3)
-image falcao_parado = Transform("falcao_parado.png", zoom=1.3)
+image falcao_voando = Transform("personagens/falcao_voando_sf.png", zoom=0.8)
+image falcao_parado = Transform("personagens/falcao_parado_sf.png", zoom=0.8)
 
 
 #PERSONAGENS

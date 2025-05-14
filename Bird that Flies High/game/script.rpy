@@ -23,6 +23,9 @@ image auak deitado = Transform("auak_sf.png", zoom=1.3, rotate=90)
 define nerkk = Character("Nerkk")
 define auak = Character("Auak")
 define prof = Character("Professor")
+define ricas = Character("RiKauer")
+define pagesh = Character("Pagesh")
+define pint = Character("Moça da Pintura")
 
 transform small_zoom:
     zoom 0.8
@@ -35,6 +38,7 @@ label start:
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 
+    jump castelo_inside
     scene bg_saladeaula
     $ covardia = 0
     $ pts = 0

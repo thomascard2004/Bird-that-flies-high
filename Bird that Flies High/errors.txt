@@ -2,11 +2,11 @@
 errors listed below, and try again.
 
 
-The label xixi is defined twice, at File "game/nerkk.rpy", line 200:
-label xixi:
-and File "game/script.rpy", line 110:
-label xixi:
+The label start is defined twice, at File "game/nerkk_cap4.rpy", line 1:
+label start:
+and File "game/script.rpy", line 32:
+label start:
 
 
 Ren'Py Version: Ren'Py 8.3.7.25031702
-Tue May 13 11:56:58 2025
+Wed May 14 10:40:28 2025

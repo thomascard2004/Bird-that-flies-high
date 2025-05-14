@@ -1,22 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/nerkk.rpy", line 222, in script
-    jump opcao_1
-ScriptError: could not find label 'opcao_1'.
+  File "game/nerkk_cap4.rpy", line 38, in script
+    jump castelo_rebuild
+ScriptError: could not find label 'castelo_rebuild'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/nerkk.rpy", line 222, in script
-    jump opcao_1
+  File "game/nerkk_cap4.rpy", line 38, in script
+    jump castelo_rebuild
   File "C:\Users\thoma\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 1712, in execute
     rv = renpy.game.script.lookup(target)
   File "C:\Users\thoma\Downloads\renpy-8.3.6-sdk\renpy\script.py", line 1103, in lookup
     raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'opcao_1'.
+ScriptError: could not find label 'castelo_rebuild'.
 
 Windows-10-10.0.26100 AMD64
 Ren'Py 8.3.7.25031702
 Kaua 1.0
-Tue May 13 11:58:45 2025
+Wed May 14 10:56:52 2025

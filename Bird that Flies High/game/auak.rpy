@@ -1,5 +1,7 @@
 label auak_start:
 
+    jump cap_4start
+    
     $ player = "Auak"
 
     scene bg_saladeaula

@@ -16,7 +16,7 @@
 
 #     prof "Excelente pergunta! Alguém sabe responder?"
 
-#     show thomas at left
+#     show nerkk at left
 
 #     nerkk "Eu sei!"
     
@@ -51,7 +51,7 @@
 # label investigar_nerkk:
 #     scene bg_exterior_saladeaula
 
-#     show thomas at center
+#     show nerkk at center
 
 #     nerkk "Acho que o barulho veio daqui. Vou dar uma espiada."
 
@@ -211,7 +211,7 @@ label mandar:
 label investigar_nerkk:
     scene bg_exterior_saladeaula
 
-    show thomas at center
+    show nerkk at center
 
     nerkk "Acho que o barulho veio daqui. Vou dar uma espiada."
 
@@ -222,7 +222,7 @@ label investigar_nerkk:
 label esconder_nerkk:
     nerkk "Me avisa quando o professor voltar!"
 
-    hide thomas
+    hide nerkk
     with dissolve
 
     auak "Meu Deus, que medroso."
@@ -238,7 +238,7 @@ label esconder_nerkk:
 
     auak "NERK VOLTA AQUI!"
 
-    show thomas
+    show nerkk
     with dissolve
 
     prof "Eu descobri o que foi."
@@ -279,7 +279,7 @@ label acontecimento_1:
 label opcao_1:
     scene poppotino
 
-    show thomas at left
+    show nerkk at left
 
     nerkk "É um Poppotino Griffino! Ele gera 5 filhotes por minuto. Se não o pararmos ele pode destruir a escola!"
 
@@ -299,7 +299,7 @@ label opcao_1:
 
     show auak at left
 
-    show thomas at right 
+    show nerkk at right 
     with dissolve
 
     nerkk "O professor me mandou em uma missão de encontrar uma melancia dourada para acalmar um Poppotino Griffino. Você vem comigo."
@@ -313,7 +313,7 @@ label opcao_1:
 label opcao_2:
     scene raizes
 
-    show thomas at left 
+    show nerkk at left 
 
     nerkk "São as raízes! Se elas continuarem crescendo vão destruir a escola!"
 
@@ -333,7 +333,7 @@ label opcao_2:
 
     show auak at left
 
-    show thomas at right 
+    show nerkk at right 
     with dissolve
 
     nerkk "O professor me mandou em uma missão de encontrar um pergaminho para parar o cresimento das raízes. Você vem comigo."
@@ -347,7 +347,7 @@ label opcao_2:
 label opcao_3:
     scene biblioteca
 
-    show thomas at left 
+    show nerkk at left 
 
     nerkk "Foi o pergaminho! Alguém o levou! O pergaminho da escola contém seus maiores segredos. Quem o tiver só pode querer destruir a escola."
 
@@ -367,7 +367,7 @@ label opcao_3:
 
     show auak at left
 
-    show thomas at right 
+    show nerkk at right 
     with dissolve
 
     nerkk "O professor me mandou em uma missão de encontrar um pergaminho para se proteger do sumiço do pergaminho da escola. Você vem comigo."
@@ -382,7 +382,7 @@ label opcao_3:
 label opcao_4:
     scene professores
 
-    show thomas at left 
+    show nerkk at left 
 
     nerkk "Os professores! Todos viraram estátua! E agora? Como podemos resolver isso?"
 
@@ -406,7 +406,7 @@ label opcao_4:
 
     show auak at left
 
-    show thomas at right 
+    show nerkk at right 
     with dissolve
 
     nerkk "O professor me mandou em uma missão de encontrar a lágrima de medusa para trazer os professores petrificados de volta. Você vem comigo."

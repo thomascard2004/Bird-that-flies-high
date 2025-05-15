@@ -39,7 +39,7 @@ label cap_4start:
 
 label castelo_rebuild:
 
-    scene bg_castelo_reconstruido
+    scene castelo_rebuild
 
     show nerkk at right
     show auak at left
@@ -56,7 +56,7 @@ label castelo_rebuild:
     jump castelo_inside
 
 label castelo_inside:
-    scene bg_castelo_inside
+    scene castelo_inside
 
     show nerkk at right
     show auak at left

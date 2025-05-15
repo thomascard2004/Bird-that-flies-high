@@ -15,6 +15,8 @@ image trilha = Transform("bgs/trilha.png", zoom=1.3)
 image floresta_fruta = Transform("bgs/florestasFrutas.png", zoom=1.3)
 
 image castelo = Transform("bgs/castelo_em_ruinas.png", zoom = 1.3)
+image castelo_rebuild = Transform("bgs/castelo_rebuild.png",zoom = 1.25)
+image castelo_inside = Transform("bgs/castelo_inside.png", zoom=2.0)
 image ricardo = Transform("rickauer_sf.png", zoom = 1.3)
 image nerkk = Transform( "thomas_sf.png", zoom = 1.3)
 image nerkk_t = Transform( "thomas_sf.png", zoom = 1.3, alpha=0.7)

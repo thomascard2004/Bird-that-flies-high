@@ -78,7 +78,7 @@ label caminho_lago:
     "Após algum tempo de instrução e prática, vocês conseguem dominar o básico do Frost-walk."
     
     ricas "Pronto. Com cuidado, conseguiremos atravessar."
-    nerkk "Incrível, Ricardo!"
+    nerkk "Incrível, Kuracier!"
 
     "Vocês atravessam o lago congelado com a nova habilidade."
 
@@ -106,7 +106,7 @@ label tp_floresta:
     auak "Lá vem..."
 
     ricas "Certo, segure-se. Vou tentar nos levar para um ponto mais avançado da floresta..."
-    "Ricardo se concentra, e uma luz envolve vocês. Por um instante, tudo gira."
+    "Kuracier se concentra, e uma luz envolve vocês. Por um instante, tudo gira."
     "Quando a luz se dissipa, vocês se veem no meio de um caos."
     jump evento_fenix
 

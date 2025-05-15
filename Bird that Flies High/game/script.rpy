@@ -6,18 +6,24 @@
 #BACKGROUNDS
 image bg_saladeaula = Transform( "bgs/sala_de_aula.png", zoom = 1.3)
 image bg_exterior_saladeaula = Transform("bgs/exterior_sala.png", zoom=1.3)
-
 image floresta = Transform("bgs/floresta.png", zoom=1.3)
 image floresta_densa = Transform("bgs/floresta_densa.png", zoom=1.3)
 image lago2 = Transform("bgs/lago2.png", zoom=1.3)
 image Fenix = Transform("bgs/Fenix.png", zoom=1.3)
 image trilha = Transform("bgs/trilha.png", zoom=1.3)
+image trilha_auak = Transform("bgs/xixi_auak.png", zoom=1.3)
 image floresta_fruta = Transform("bgs/florestasFrutas.png", zoom=1.3)
-
 image castelo = Transform("bgs/castelo_em_ruinas.png", zoom = 1.3)
 image castelo_rebuild = Transform("bgs/castelo_rebuild.png",zoom = 1.25)
 image castelo_inside = Transform("bgs/castelo_inside.png", zoom=2.0)
+image raizes = Transform("bgs/raizes.png", zoom=1.3)
+image poppotino = Transform("bgs/popotino.png", zoom=1.25)
+image biblioteca = Transform("bgs/biblioteca.png", zoom=1.3)
+image professores = Transform("bgs/professores.png", zoom=1.3)
+
 image ricardo = Transform("rickauer_sf.png", zoom = 1.3)
+image ricardo ataque = Transform("personagens/rickauer_ataque.png", xzoom=-1.3, yzoom=1.3)
+image ricardo morto = Transform("personagens/rickauer_morto.png", zoom = 1.1)
 image nerkk = Transform( "thomas_sf.png", zoom = 1.3)
 image nerkk_t = Transform( "thomas_sf.png", zoom = 1.3, alpha=0.7)
 image professor = Transform("professor.png", zoom = 0.8)

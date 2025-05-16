@@ -278,7 +278,7 @@ label opcao_1_auak:
 
     auak "Eu te explico no caminho...."
     
-    $ pronome "a"
+    $ pronome = "a"
     $ antidoto = "melancia dourada"
 
     jump cap_2_auak
@@ -313,7 +313,7 @@ label opcao_2_auak:
 
     auak "Eu te explico no caminho...."
     
-    $ pronome "o"
+    $ pronome = "o"
     $ antidoto = "pergaminho"
 
     jump cap_2_auak
@@ -348,7 +348,7 @@ label opcao_3_auak:
 
     auak "Eu te explico no caminho...."
 
-    $ pronome "o"
+    $ pronome = "o"
     $ antidoto = "pergaminho irmão"
 
     jump cap_2_auak    
@@ -386,7 +386,7 @@ label opcao_4_auak:
     auak "Eu te explico no caminho...."
 
     
-    $ pronome "a"
+    $ pronome = "a"
     $ antidoto = "lágrima de medusa"
 
     jump cap_3_auak    

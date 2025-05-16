@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/nerkk_cap3.rpy", line 151: expected 'comma or end of line' not found.
-    with fade
-    ^
+File "game/nerkk_cap4.rpy", line 101: expected 'simple_expression' not found.
+    xpos
+        ^
 
 Ren'Py Version: Ren'Py 8.3.7.25031702
-Fri May 16 15:33:59 2025
+Fri May 16 18:50:56 2025

@@ -1,30 +1,41 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/nerkk_cap3.rpy", line 232, in script
-    show nerkk ataque at right
-Exception: Image 'nerkk' does not accept attributes 'ataque'.
+  File "game/nerkk_cap4.rpy", line 236, in script
+    pint "Aqui está [pronome] [antidoto]"
+NameError: name 'pronome' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/nerkk_cap3.rpy", line 232, in script
-    show nerkk ataque at right
-  File "/home/enzo/Downloads/renpy-8.3.7-sdk/renpy/ast.py", line 1124, in execute
-    show_imspec(self.imspec, atl=getattr(self, "atl", None))
-  File "/home/enzo/Downloads/renpy-8.3.7-sdk/renpy/ast.py", line 1087, in show_imspec
-    renpy.config.show(name,
-  File "/home/enzo/Downloads/renpy-8.3.7-sdk/renpy/exports/displayexports.py", line 477, in show
-    if not base.find_target() and renpy.config.missing_show:
-  File "/home/enzo/Downloads/renpy-8.3.7-sdk/renpy/display/image.py", line 421, in find_target
-    self.target = target._duplicate(a)
-  File "/home/enzo/Downloads/renpy-8.3.7-sdk/renpy/display/transform.py", line 1188, in _duplicate
-    args.extraneous()
-  File "/home/enzo/Downloads/renpy-8.3.7-sdk/renpy/display/displayable.py", line 109, in extraneous
-    raise Exception("Image '{}' does not accept attributes '{}'.".format(
-Exception: Image 'nerkk' does not accept attributes 'ataque'.
+  File "game/nerkk_cap4.rpy", line 236, in script
+    pint "Aqui está [pronome] [antidoto]"
+  File "C:\Users\thoma\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 2586, in execute
+    Say.execute(self)
+  File "C:\Users\thoma\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 623, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Users\thoma\Downloads\renpy-8.3.6-sdk\renpy\exports\sayexports.py", line 132, in say
+    who(what, *args, **kwargs)
+  File "C:\Users\thoma\Downloads\renpy-8.3.6-sdk\renpy\character.py", line 1456, in __call__
+    what = self.prefix_suffix("what", self.what_prefix, what, self.what_suffix)
+  File "C:\Users\thoma\Downloads\renpy-8.3.6-sdk\renpy\character.py", line 1369, in prefix_suffix
+    return (sub(prefix) + sub(body) + sub(suffix))
+  File "C:\Users\thoma\Downloads\renpy-8.3.6-sdk\renpy\character.py", line 1349, in sub
+    return renpy.substitutions.substitute(s, scope=scope, force=force, translate=translate)[0]
+  File "C:\Users\thoma\Downloads\renpy-8.3.6-sdk\renpy\substitutions.py", line 373, in substitute
+    s = interpolate(s, variables) # type: ignore
+  File "C:\Users\thoma\Downloads\renpy-8.3.6-sdk\renpy\substitutions.py", line 86, in interpolate
+    raise e
+  File "C:\Users\thoma\Downloads\renpy-8.3.6-sdk\renpy\substitutions.py", line 78, in interpolate
+    value = renpy.python.py_eval(code, {}, scope)
+  File "C:\Users\thoma\Downloads\renpy-8.3.6-sdk\renpy\python.py", line 1218, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "C:\Users\thoma\Downloads\renpy-8.3.6-sdk\renpy\python.py", line 1211, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "<none>", line 1, in <module>
+NameError: name 'pronome' is not defined
 
-Linux-6.12.10-76061203-generic-x86_64-with-glibc2.35 x86_64
+Windows-10-10.0.26100 AMD64
 Ren'Py 8.3.7.25031702
 Kaua 1.0
-Fri May 16 16:06:48 2025
+Fri May 16 19:34:26 2025

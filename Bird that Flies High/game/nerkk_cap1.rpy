@@ -268,12 +268,23 @@ label acontecimento_1:
 
         "O Poppotino Griffino fugiu do curral.":
             $ causa = "Poppotino Griffino"
+            $ pronome = "a"
+            $ antidoto = "Melancia Dourada"
+
             jump opcao_1
         "Raízes Mágicas descontroladas sairam da estufa.":
+            $ pronome = "o"
+            $ antidoto = "Pergaminho"
             jump opcao_2
+            
         "Alguém roubou um pergaminho almadiçoado na biblioteca.":
+            $ pronome = "o"
+            $ antidoto = "Pergaminho"
             jump opcao_3
+
         "Todos os professores viraram estátua":
+            $ pronome = "a"
+            $ antidoto = "Lagrima da Medusa"
             jump opcao_4
 
 label opcao_1:
@@ -289,7 +300,7 @@ label opcao_1:
 
     prof "Com o ataque do Poppotino Griffino eu tenho que ficar aqui tentando conter as gerações de filhotes dele, mas não é o suficiente para salvar a escola."
 
-    prof "Eu preciso que você vá até o castelo desolado de Bacallister e busque a melancia dourada. É a única coisa que pode acalmar o Poppotino Griffino."
+    prof "Eu preciso que você vá até o castelo desolado de Bacallister e busque a Melancia Dourada. É a única coisa que pode acalmar o Poppotino Griffino."
 
     prof "Uma última coisa. Leve este totem. Você saberá quando usá-lo."
 

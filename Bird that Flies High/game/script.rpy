@@ -69,6 +69,8 @@ label start:
     $ pts = 0
     $ maldade = 0
     $ opcao = ""
+    $ pronome = ""
+    $ antidoto = ""
 
     menu escolha_jogador:
 

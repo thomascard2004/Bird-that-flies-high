@@ -1,4 +1,4 @@
-label cap_4start:
+label cap_4start_auak:
 
     scene castelo
 
@@ -27,7 +27,7 @@ label cap_4start:
 
     menu:
         "Tentar usar o totem.":
-            jump castelo_rebuild
+            jump castelo_rebuild_auak
 
         "Não tentar usar o totem.":
 
@@ -35,9 +35,9 @@ label cap_4start:
             pagesh "É a única opção que temos!"
             ricas "Você precisa fazer isso, agora!"
             auak "OK! Eu vou usar!"
-            jump castelo_rebuild
+            jump castelo_rebuild_auak
 
-label castelo_rebuild:
+label castelo_rebuild_auak:
 
     scene castelo_rebuild
 
@@ -53,9 +53,9 @@ label castelo_rebuild:
 
     nerkk "Não temos tempo, vamos entrar."
     pagesh "Right behind you."
-    jump castelo_inside
+    jump castelo_inside_auak
 
-label castelo_inside:
+label castelo_inside_auak:
     scene castelo_inside
 
     show nerkk at right

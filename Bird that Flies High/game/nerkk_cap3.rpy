@@ -7,12 +7,15 @@ label cap_3start:
     show ricardo:
         xpos 0.6
         ypos 0.3
+    show Pagesh:
+        xpos 0.1
+        ypos 0.3
 
     auak "Pelas palavras do professor, acho que devemos seguir nessa direção"
-
-    auak "Podem ir indo na frente, eu vou só fazer um xixizinho maroto"
+    auak "Podem ir na frente, eu vou só fazer um xixizinho maroto"
 
     hide auak
+    with dissolve
 
     nerkk "Bem, vamos andando então, não temos tempo a perder!"
     ricas "Certo, vamos lá."
@@ -27,7 +30,13 @@ label ave:
     scene floresta
 
     show nerkk at right
-    show ricardo at left
+    show ricardo:
+        xpos 0.6
+        ypos 0.3
+    show Pagesh:
+        xpos 0.1
+        ypos 0.3
+
 
     "Um súbito bater de asas chama a atenção."
     show falcao_voando at center
@@ -36,13 +45,13 @@ label ave:
     show falcao_parado at center
 
 
-    falcao "Bom dia viajantes, como posso ajuda-los?" 
+    falcao "Bom dia, viajantes. Como posso ajudá-los?" 
     nerkk "Estamos tentando chegar ao castelo que fica além desta floresta. Sabe o melhor caminho?"
 
 
     falcao "Hmm, o castelo..."
-    falcao "O lago é extremamente traiçoeiro, rico de criaturas perigosas a morte é certa."
-    falcao "A floresta é mais direta, com certeza. Tenho que certeza que obterão sucesso"
+    falcao "O lago é extremamente traiçoeiro, repleto de criaturas perigosas. A morte é certa."
+    falcao "A floresta é o caminho mais direto. Tenho certeza de que obterão sucesso."
     falcao "O que me dizem?"
 
     menu falar_com_ave_escolhas:
@@ -60,18 +69,24 @@ label caminho_lago:
     scene lago2
 
     show nerkk at right
-    show ricardo at left
-    hide falcao_parado
-    show auak:
+    show ricardo:
         xpos 0.6
-        ypos 0.3    
+        ypos 0.3
+    show Pagesh:
+        xpos 0.1
+        ypos 0.3
+    hide falcao_parado
+    with dissolve
+    pause 0.5
+    show auak at left
 
-    auak "Ufa... consegui alcançar voces. Vamos pelo lago né? Um passaro estranho me falou que era meio perigoso..."
+
+    auak "Ufa... consegui alcançar vocês. Vamos pelo lago né? Um pássaro estranho me falou que era meio perigoso..."
     ricas "Ah... ele deve estar exagerando só!"
     nerkk "O lago, então. Como vamos atravessar?"
-    pagesh "Bem, sempre tem a opção de atravessar a nado né."
-    nerkk "Isso me parece meio perigoso não? Baseado no que o falcão disse."
-    ricas "Talvez eu possa ajudar. Lembro-me de um feitiço antigo, o 'Frost-walk'. Ele permite caminhar sobre superfícies aquáticas, solidificando-a momentaneamente sob os pés."
+    pagesh "Bem, sempre tem a opção de atravessar a nado, né?"
+    nerkk "Isso me parece meio perigoso, não? Baseado no que o falcão disse."
+    ricas "Talvez eu possa ajudar. Lembro-me de um feitiço antigo, o 'Frost-walk'. Ele permite caminhar sobre superfícies aquáticas, solidificando-as momentaneamente sob os pés."
     nerkk "Você consegue fazer isso?!"
     ricas "Vou tentar ensinar o básico. Concentre sua energia nos pés, visualize o gelo se tornando mais forte sob você."
 
@@ -91,17 +106,23 @@ label tp_floresta:
     scene floresta
 
     show nerkk at right
-    show ricardo at left
+    show ricardo:
+        xpos 0.6
+        ypos 0.3
+    show Pagesh:
+        xpos 0.1
+        ypos 0.3
     hide falcao_parado
+    with dissolve
 
 
     ricas "Um teleporte? É arriscado, Nerkk. Podemos parar em qualquer lugar."
     nerkk "Mas pode nos poupar muito tempo! Vamos tentar!"
 
-    show auak:
-        xpos 0.6
-        ypos 0.3
-    auak "Ufa... consegui alcançar voces. Um passaro estranho me falou que estavam me esperando para teleportar..."
+    pause 0.5
+    show auak at left
+
+    auak "Ufa... consegui alcançar vocês. Um passaro estranho me falou que estavam me esperando para teleportar..."
     nerkk "Pode confiar."
     auak "Lá vem..."
 
@@ -115,13 +136,21 @@ label caminho_floresta:
     scene floresta_densa
 
     show nerkk at right
-    show ricardo at left
-    hide falcao_parado
-    show auak:
+    show ricardo:
         xpos 0.6
         ypos 0.3
+    show Pagesh:
+        xpos 0.1
+        ypos 0.3
+    
+    hide falcao_parado
+    with dissolve
 
-    auak "Ufa... consegui alcançar voces. Vamos pela floresta né? Um passaro estranho me falou que esse era o melhor caminho mesmo"
+    pause 0.5
+
+    show auak at left
+
+    auak "Ufa... consegui alcançar vocês. Vamos pela floresta, né? Um pássaro estranho me falou que esse era o melhor caminho mesmo"
     nerkk "Vamos pela floresta mesmo. Parece mais seguro."
     pagesh "Cuidado onde pisam e com o que tocam."
     "Vocês adentram mais a fundo na floresta. Após alguma caminhada, encontram árvores com frutas exóticas e brilhantes."
@@ -133,12 +162,15 @@ label Frutas:
     scene floresta_fruta
 
     show nerkk at right
-    show ricardo at left
-    show auak:
+    show auak at left
+    show ricardo:
         xpos 0.6
         ypos 0.3
+    show Pagesh:
+        xpos 0.1
+        ypos 0.3
 
-    ricas "Olha!!! Que frutas são essas? Parecem uma delica...."
+    ricas "Olha!!! Que frutas são essas? Parecem uma delícia...."
     pagesh "Desconfio de coisas que brilham demais na natureza, Ricas."
 
     menu comer_fruta_escolha:
@@ -153,6 +185,12 @@ label comer_fruta_magica:
     ricas "Ah, qual é o problema? Só uma mordidinha..."
     "Ricas pega uma fruta e a morde."
     "Quase que instantaneamente, Ricas começa a passar mal, engasgando e caindo ao chão."
+
+
+    hide ricardo
+    show ricardo morto at center
+    with fade
+
     pagesh "NÃO! O que você fez?!"
 
     "É tarde demais. A fruta era fatalmente venenosa."
@@ -179,9 +217,29 @@ label evento_fenix:
     show auak:
         xpos 0.6
         ypos 0.3
+    show Pagesh:
+        xpos 0.1
+        ypos 0.3
 
     "O ar se enche de cinzas e o calor é abrasador. Chamas mágicas, como uma tempestade invocada por uma Fênix, cercam vocês!"
-    ricas "Droga! Era uma armadilha, é um guardião elemental!"
+
+    hide nerkk
+    hide ricardo
+    hide auak
+    hide Pagesh
+    with fade
+
+    show nerkk ataque at right
+    show ricardo ataque at left
+    show auak ataque:
+        xpos 0.5
+        ypos 0.3
+    show Pagesh ataque:
+        xpos 0.3
+        ypos 0.3
+
+
+    ricas "Droga! Era uma armadilha.É um guardião elemental!"
     nerkk "Precisamos fazer alguma coisa, e rápido!"
     pagesh "Minha magia pode ajudar, mas precisamos escolher o elemento certo!"
 
@@ -213,7 +271,7 @@ label usar_magia_agua:
     "Pagesh invoca uma torrente de água mágica que colide com as chamas da fênix."
     "Vapor escaldante sobe por toda parte, mas a água começa a subjugar o fogo."
     nerkk "Está funcionando!"
-    "Com esforço, Pagesh e seus amigos consegue extinguir a maior parte do perigo, abrindo um caminho."
+    "Com esforço, Pagesh e seus amigos conseguem extinguir a maior parte do perigo, abrindo um caminho."
     pagesh "Ufa... essa foi por pouco. Vamos sair daqui antes que algo mais aconteça."
     jump chegada_castelo
 

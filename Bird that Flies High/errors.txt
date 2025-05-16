@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 19: invalid syntax
-    Transfomr("bgs/castelo_inside"zoom=1.0)
-                                   ^
+File "game/nerkk_cap3.rpy", line 151: expected 'comma or end of line' not found.
+    with fade
+    ^
 
 Ren'Py Version: Ren'Py 8.3.7.25031702
-Wed May 14 23:54:41 2025
+Fri May 16 15:33:59 2025

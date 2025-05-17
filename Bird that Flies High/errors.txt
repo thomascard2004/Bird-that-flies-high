@@ -2,17 +2,9 @@
 errors listed below, and try again.
 
 
-The label castelo_inside is defined twice, at File "game/auak_cap_4.rpy", line 61:
-label castelo_inside:
-and File "game/nerkk_cap4.rpy", line 64:
-label castelo_inside:
-
-
-The label finale is defined twice, at File "game/auak_cap_4.rpy", line 179:
-label finale:
-and File "game/nerkk_cap4.rpy", line 186:
-label finale:
-
+File "game/nerkk_cap4.rpy", line 316: ATL statement contains two expressions in a row; is one of them a misspelled property? If not, separate them with pass.
+    Rxpos 0.6
+             ^
 
 Ren'Py Version: Ren'Py 8.3.7.25031702
-Sat May 17 15:02:59 2025
+Sat May 17 16:38:14 2025

@@ -134,8 +134,7 @@ label castelo_inside:
     hide Pagesh
     show fuinha:
         xpos 0.5
-        ypos 0.3
-
+        ypos 0.4
 
     pint "Seu tolo!!"
 
@@ -156,6 +155,9 @@ label castelo_inside:
     "*barulho de magia ainda mais intensa que antes*"
 
     hide ricardo
+    show ricardo morto:
+        xpos 0.6
+        ypos 0.3
     
     pint "Não brinquem comigo crianças."
 
@@ -191,8 +193,14 @@ label finale:
         ypos 0.1
     show nerkk at right
     show auak at left
-    
 
+    show fuinha:
+        xpos 0.5
+        ypos 0.4
+
+    show ricardo morto:
+        xpos 0.6
+        ypos 0.3
     nerkk "Você tem que trazer meus amigos de volta a suas formas originais."
 
     auak "Você realmente se importa com esses dois que você acabou de conhecer?"
@@ -211,12 +219,13 @@ label finale:
 
     "*magia bondosa dessa vez*"
 
+    hide ricardo morto
     show ricardo:
         xpos 0.6
         ypos 0.3
     show fuinha:
         xpos 0.5
-        ypos 0.3
+        ypos 0.4
     
 
     ricas "I'm back bitches!"
@@ -240,6 +249,77 @@ label finale:
     pint "Enfim."
 
     pint "Aqui está [pronome] [antidoto]"
+
+    pint "Espero que consigam resolver o problema de vocês!"
+
+    nerkk "Que ótimo, agora só precisamos levar [pronome] [antidoto] de volta, e tudo estará resolvido."
+
+    auak "Não tão rápido."
+
+    hide auak
+    show auak ataque at left
+
+    auak "Vocês não vão a lugar nenhum!"
+    
+    nerkk "Como assim Auak, para de brincadeira!!"
+
+    nerkk "Temos que voltar logo para deter [pronome] [causa]"
+
+    auak "E deixar que vocês acabem com o meu plano?"
+
+    auak "Fácil assim?"
+
+    nerkk "Como assim seu plano?"
+
+    nerkk "Você estava por trás de tudo isso o tempo todo?"
+
+    auak "SIM!"
+
+    auak "Finalmente você entendeu."
+
+    auak "Você foi bem burrinho de acreditar que eu ja fui seu amigo de verdade."
+
+    auak "Agora pode ir tirando o seu cavalinho da chuva."
+
+    auak "Vocês não vão a lugar nenhum."
+
+    pagesh "E agora Nerkk? O que vamos fazer?"
+
+    menu:
+        "O que nós vamos fazer?"
+
+        "Vamos nos render.":
+            jump bad_ending2
+        
+        "Nós vamos lutar com ele!":
+            jump luta_final
+        
+        "Iremos sentar e chorar.":
+            jump bad_ending2
+        
+        "Iremos acabar com ele, aqui e agora.":
+            jump luta_final
+
+label luta_final:
+
+    scene castelo_inside
+
+    show auak_ataque at left
+
+    show nerkk ataque at right
+
+    show Pagesh ataque:
+        xpos 0.5
+        ypos 0.3
+    
+    show ricardo ataque:
+        xpos 0.6
+        ypos 0.3
+
+    nerkk "Eu não quero fazer isso Auak, sai da frente."
+
+    auak "Eu quero, e muito!"
+
 
 
 

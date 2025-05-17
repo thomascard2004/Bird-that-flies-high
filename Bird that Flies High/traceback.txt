@@ -1,22 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/nerkk_cap4.rpy", line 184, in script
-    jump bad_ending
-ScriptError: could not find label 'bad_ending'.
+  File "game/nerkk_cap4.rpy", line 298, in script
+    jump bad_ending2
+ScriptError: could not find label 'bad_ending2'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/nerkk_cap4.rpy", line 184, in script
-    jump bad_ending
-  File "C:\Users\Usuario\Documents\renpy\renpy-8.3.7-sdk\renpy\ast.py", line 1712, in execute
+  File "game/nerkk_cap4.rpy", line 298, in script
+    jump bad_ending2
+  File "C:\Users\thoma\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 1712, in execute
     rv = renpy.game.script.lookup(target)
-  File "C:\Users\Usuario\Documents\renpy\renpy-8.3.7-sdk\renpy\script.py", line 1103, in lookup
+  File "C:\Users\thoma\Downloads\renpy-8.3.6-sdk\renpy\script.py", line 1103, in lookup
     raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'bad_ending'.
+ScriptError: could not find label 'bad_ending2'.
 
-Windows-10-10.0.22621 AMD64
+Windows-10-10.0.26100 AMD64
 Ren'Py 8.3.7.25031702
 Kaua 1.0
-Sat May 17 15:09:01 2025
+Sat May 17 17:18:14 2025

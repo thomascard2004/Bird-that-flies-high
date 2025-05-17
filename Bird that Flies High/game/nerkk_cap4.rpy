@@ -20,7 +20,7 @@ label cap_4start:
 
     auak "Mesmo juntos, nós não temos mágia o suficiente para reeguer o castelo."
 
-    nerkk "O professor me deu esse totem."
+    nerkk "O prof me deu esse totem."
 
     nerkk "E disse que eu ia saber quando usar..."
 
@@ -352,6 +352,7 @@ label luta_final:
 
     "*magia da amizade entrando em ação.*"
 
+    hide auak
     show auak deitado at left
 
     nerkk "Conseguimos."
@@ -366,17 +367,17 @@ label luta_final:
 
     scene bg_exterior_saladeaula
 
-    show professor at truecenter
+    show professor abaixado at left
 
-    professor "Onde ele está?!!!"
+    prof "Onde ele está?!!!"
 
     show nerkk at right
 
-    nerkk "Aqui está professor!!"
+    nerkk "Aqui está prof!!"
 
     nerkk "[pronome] [antidoto] coming right up!"
 
-    professor "Muito obrigado Nerkk, você salvou a escola!"
+    prof "Muito obrigado Nerkk, você salvou a escola!"
 
 
 

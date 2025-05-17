@@ -204,7 +204,7 @@ label mandar:
 
     show professor abaixado at truecenter
 
-    prof "Descobri o motivo da explosão"
+    prof "Descobri o motivo da explosão. Nerkk, vem comigo."
 
     jump acontecimento_1
 
@@ -214,6 +214,12 @@ label investigar_nerkk:
     show nerkk at center
 
     nerkk "Acho que o barulho veio daqui. Vou dar uma espiada."
+
+    show professor grande abaixado at left
+
+    prof "Nerkk! Que bom te encontrar aqui."
+
+    prof "Descobri o motivo da explosão. Vem comigo."
 
     jump acontecimento_1
     
@@ -236,12 +242,12 @@ label esconder_nerkk:
 
     auak "Ele se escondeu. Vou chamar ele."
 
-    auak "NERK VOLTA AQUI!"
+    auak "NERKK VOLTA AQUI!"
 
     show nerkk
     with dissolve
 
-    prof "Eu descobri o que foi."
+    prof "Eu descobri o que foi. Nerkk, vem comigo."
 
     jump acontecimento_1
 
@@ -257,7 +263,7 @@ label xixi:
 
     prof "Engraçado, tá com cheiro de xixi aqui."
     
-    prof "Enfim, eu descobri o que aconteceu."
+    prof "Enfim, eu descobri o que aconteceu. Nerkk, vem comigo."
     
     jump acontecimento_1
 
@@ -292,11 +298,9 @@ label opcao_1:
 
     show nerkk at left
 
+    show professor grande abaixado at center
+
     nerkk "É um Poppotino Griffino! Ele gera 5 filhotes por minuto. Se não o pararmos ele pode destruir a escola!"
-
-    show professor at center
-
-    prof "Que bom que você apareceu Nerkk! Vou precisar muito da sua ajuda."
 
     prof "Com o ataque do Poppotino Griffino eu tenho que ficar aqui tentando conter as gerações de filhotes dele, mas não é o suficiente para salvar a escola."
 
@@ -319,16 +323,16 @@ label opcao_1:
 
     nerkk "Eu te explico no caminho...."
 
-    jump cap_2
+    jump cap_2start
 
 label opcao_2:
     scene raizes
 
     show nerkk at left 
 
-    nerkk "São as raízes! Se elas continuarem crescendo vão destruir a escola!"
+    show professor grande abaixado at center
 
-    show professor at center
+    nerkk "São as raízes! Se elas continuarem crescendo vão destruir a escola!"
 
     prof "Que bom que você apareceu Nerkk! Vou precisar muito da sua ajuda."
 
@@ -353,16 +357,16 @@ label opcao_2:
 
     nerkk "Eu te explico no caminho...."
 
-    jump cap_2
+    jump cap_2start
 
 label opcao_3:
     scene biblioteca
 
     show nerkk at left 
 
-    nerkk "Foi o pergaminho! Alguém o levou! O pergaminho da escola contém seus maiores segredos. Quem o tiver só pode querer destruir a escola."
+    show professor grande abaixado at center
 
-    show professor at center
+    nerkk "Foi o pergaminho! Alguém o levou! O pergaminho da escola contém seus maiores segredos. Quem o tiver só pode querer destruir a escola."
 
     prof "Que bom que você apareceu Nerkk! Vou precisar muito da sua ajuda."
 
@@ -388,16 +392,16 @@ label opcao_3:
     nerkk "Eu te explico no caminho...."
 
 
-    jump cap_2    
+    jump cap_2start    
 
 label opcao_4:
     scene professores
 
     show nerkk at left 
 
-    nerkk "Os professores! Todos viraram estátua! E agora? Como podemos resolver isso?"
+    show professor grande abaixado at center
 
-    show professor at center
+    nerkk "Os professores! Todos viraram estátua! E agora? Como podemos resolver isso?"
 
     prof "Que bom que você apareceu Nerkk! Vou precisar muito da sua ajuda."
 
@@ -427,4 +431,4 @@ label opcao_4:
     nerkk "Eu te explico no caminho...."
 
 
-    jump cap_2    
+    jump cap_2start    

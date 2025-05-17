@@ -281,7 +281,8 @@ label opcao_1_auak:
     $ pronome = "a"
     $ antidoto = "melancia dourada"
 
-    jump cap_2_auak
+    jump cap_2start_auak    
+
 
 label opcao_2_auak:
     scene raizes
@@ -316,7 +317,8 @@ label opcao_2_auak:
     $ pronome = "o"
     $ antidoto = "pergaminho"
 
-    jump cap_2_auak
+    jump cap_2start_auak    
+
 
 label opcao_3_auak:
     scene biblioteca
@@ -351,7 +353,8 @@ label opcao_3_auak:
     $ pronome = "o"
     $ antidoto = "pergaminho irmão"
 
-    jump cap_2_auak    
+    jump cap_2start_auak    
+    
 
 label opcao_4_auak:
     scene professores
@@ -389,4 +392,4 @@ label opcao_4_auak:
     $ pronome = "a"
     $ antidoto = "lágrima de medusa"
 
-    jump cap_3_auak    
+    jump cap_2start_auak    

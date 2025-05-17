@@ -79,7 +79,7 @@ label castelo_inside:
 
     "Quatro desafiantes entraram no castelo."
 
-    "Mas.. quantos iram sair?"
+    "Mas.. quantos irão sair?"
 
     "*risadas maléficas*"
 
@@ -132,6 +132,10 @@ label castelo_inside:
     "*barulho de magia*"
 
     hide Pagesh
+    show fuinha:
+        xpos 0.5
+        ypos 0.3
+
 
     pint "Seu tolo!!"
 
@@ -187,12 +191,6 @@ label finale:
         ypos 0.1
     show nerkk at right
     show auak at left
-    show ricardo:
-        xpos 0.6
-        ypos 0.3
-    show Pagesh:
-        xpos 0.5
-        ypos 0.3
     
 
     nerkk "Você tem que trazer meus amigos de volta a suas formas originais."
@@ -212,6 +210,14 @@ label finale:
     pint "Eu vou restaurar seus amigos as suas formas originais."
 
     "*magia bondosa dessa vez*"
+
+    show ricardo:
+        xpos 0.6
+        ypos 0.3
+    show fuinha:
+        xpos 0.5
+        ypos 0.3
+    
 
     ricas "I'm back bitches!"
 

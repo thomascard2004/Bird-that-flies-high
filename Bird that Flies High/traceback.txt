@@ -1,41 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/nerkk_cap4.rpy", line 236, in script
-    pint "Aqui está [pronome] [antidoto]"
-NameError: name 'pronome' is not defined
+  File "game/nerkk_cap4.rpy", line 184, in script
+    jump bad_ending
+ScriptError: could not find label 'bad_ending'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/nerkk_cap4.rpy", line 236, in script
-    pint "Aqui está [pronome] [antidoto]"
-  File "C:\Users\thoma\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 2586, in execute
-    Say.execute(self)
-  File "C:\Users\thoma\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 623, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "C:\Users\thoma\Downloads\renpy-8.3.6-sdk\renpy\exports\sayexports.py", line 132, in say
-    who(what, *args, **kwargs)
-  File "C:\Users\thoma\Downloads\renpy-8.3.6-sdk\renpy\character.py", line 1456, in __call__
-    what = self.prefix_suffix("what", self.what_prefix, what, self.what_suffix)
-  File "C:\Users\thoma\Downloads\renpy-8.3.6-sdk\renpy\character.py", line 1369, in prefix_suffix
-    return (sub(prefix) + sub(body) + sub(suffix))
-  File "C:\Users\thoma\Downloads\renpy-8.3.6-sdk\renpy\character.py", line 1349, in sub
-    return renpy.substitutions.substitute(s, scope=scope, force=force, translate=translate)[0]
-  File "C:\Users\thoma\Downloads\renpy-8.3.6-sdk\renpy\substitutions.py", line 373, in substitute
-    s = interpolate(s, variables) # type: ignore
-  File "C:\Users\thoma\Downloads\renpy-8.3.6-sdk\renpy\substitutions.py", line 86, in interpolate
-    raise e
-  File "C:\Users\thoma\Downloads\renpy-8.3.6-sdk\renpy\substitutions.py", line 78, in interpolate
-    value = renpy.python.py_eval(code, {}, scope)
-  File "C:\Users\thoma\Downloads\renpy-8.3.6-sdk\renpy\python.py", line 1218, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "C:\Users\thoma\Downloads\renpy-8.3.6-sdk\renpy\python.py", line 1211, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "<none>", line 1, in <module>
-NameError: name 'pronome' is not defined
+  File "game/nerkk_cap4.rpy", line 184, in script
+    jump bad_ending
+  File "C:\Users\Usuario\Documents\renpy\renpy-8.3.7-sdk\renpy\ast.py", line 1712, in execute
+    rv = renpy.game.script.lookup(target)
+  File "C:\Users\Usuario\Documents\renpy\renpy-8.3.7-sdk\renpy\script.py", line 1103, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'bad_ending'.
 
-Windows-10-10.0.26100 AMD64
+Windows-10-10.0.22621 AMD64
 Ren'Py 8.3.7.25031702
 Kaua 1.0
-Fri May 16 19:34:26 2025
+Sat May 17 15:09:01 2025

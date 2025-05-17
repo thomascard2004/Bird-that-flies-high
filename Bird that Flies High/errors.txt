@@ -2,9 +2,17 @@
 errors listed below, and try again.
 
 
-File "game/nerkk_cap4.rpy", line 101: expected 'simple_expression' not found.
-    xpos
-        ^
+The label castelo_inside is defined twice, at File "game/auak_cap_4.rpy", line 61:
+label castelo_inside:
+and File "game/nerkk_cap4.rpy", line 64:
+label castelo_inside:
+
+
+The label finale is defined twice, at File "game/auak_cap_4.rpy", line 179:
+label finale:
+and File "game/nerkk_cap4.rpy", line 186:
+label finale:
+
 
 Ren'Py Version: Ren'Py 8.3.7.25031702
-Fri May 16 18:50:56 2025
+Sat May 17 15:02:59 2025

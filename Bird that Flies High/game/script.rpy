@@ -20,8 +20,12 @@ image raizes = Transform("bgs/raizes.png", zoom=1.3)
 image poppotino = Transform("bgs/popotino.png", zoom=1.25)
 image biblioteca = Transform("bgs/biblioteca.png", zoom=1.3)
 image professores = Transform("bgs/professores.png", zoom=1.3)
+image restaurante = Transform("bgs/restaurante_arvore_impressionista.png", zoom=1.3)
+image restaurante quebrado = Transform("bgs/restaurante_arvore_impressionista_quebrado.png", zoom=1.3)
+image restaurante exterior = Transform("bgs/restaurante_exterior.png", zoom=1.3)
 
 
+image fuinha = Transform("personagens/fuinha.png", zoom = 0.8) 
 image pintura_mulher = Transform("personagens/moca_pintura.png", zoom=1.0)
 image Pagesh = Transform("personagens/Pagesh.png", zoom = 1.3)
 image Pagesh ataque = Transform("personagens/Pagesh_ataque.png", zoom = 1.3)
@@ -31,13 +35,17 @@ image ricardo morto = Transform("personagens/rickauer_morto.png", zoom = 1.1)
 image nerkk = Transform( "thomas_sf.png", zoom = 1.3)
 image nerkk_t = Transform( "thomas_sf.png", zoom = 1.3, alpha=0.7)
 image nerkk ataque = Transform("personagens/thomas_ataque.png", xzoom=-1.3, yzoom=1.3)
+image nerkk triste = Transform("personagens/thomas_triste.png", zoom=1.3)
 image professor = Transform("professor.png", zoom = 0.8)
 image professor abaixado = Transform("professor_abaixado.png", zoom = 0.8)
+image professor grande = Transform("professor.png", zoom = 1.3)
+image professor grande abaixado = Transform("professor_abaixado.png", zoom = 1.3)
 image bolsa = Transform("personagens/bolsa.png", zoom=0.8)
 image popotino = Transform("personagens/popotino.png", zoom=1.3)
 image auak = Transform("auak_sf.png", zoom=1.3)
 image auak deitado = Transform("auak_sf.png", zoom=1.3, rotate=90)
 image auak ataque = Transform("personagens/auak_ataque.png", zoom = 1.3)
+image auak triste = Transform("personagens/auak_triste.png", zoom=1.3)
 
 image falcao_voando = Transform("personagens/falcao_voando_sf.png", zoom=0.8)
 image falcao_parado = Transform("personagens/falcao_parado_sf.png", zoom=0.8)
@@ -63,8 +71,10 @@ label start:
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 
-    jump cap_3start
+    # jump cap_3start
     # jump castelo_inside
+    # jump cap_4start
+    
     scene bg_saladeaula
     $ covardia = 0
     $ pts = 0

@@ -7,6 +7,9 @@ label cap_4start_auak:
     show ricardo:
         xpos 0.6
         ypos 0.3
+    show Pagesh:
+        xpos 0.1
+        ypos 0.3
     
 
     ricas "Finalmente chegamos!"
@@ -58,10 +61,14 @@ label castelo_rebuild_auak:
 label castelo_inside_auak:
     scene castelo_inside
 
+
     show nerkk at right
     show auak at left
     show ricardo:
         xpos 0.6
+        ypos 0.3
+    show Pagesh:
+        xpos 0.5
         ypos 0.3
     "*barulho de portas se fechando*"
 
@@ -69,7 +76,7 @@ label castelo_inside_auak:
 
     "Quatro desafiantes entraram no castelo."
 
-    "Mas.. quantos iram sair?"
+    "Mas.. quantos irão sair?"
 
     "*risadas maléficas*"
 
@@ -87,6 +94,10 @@ label castelo_inside_auak:
 
     ricas "Acho que veio de dentro dessa pintura (?)"
 
+    show pintura_mulher:
+        xpos 0.215
+        ypos 0.1
+
     pint "Você é mais esperto que seus amiguinhos, não é?"
 
     pint "Não precisam ficar com medo."
@@ -103,9 +114,125 @@ label castelo_inside_auak:
 
     pagesh "Como assim?"
 
-    pint "Para conseguirem o [antidoto], vocês teram que completar o seguinte desafio."
+    pint "Para conseguirem [pronome] [antidoto], vocês teram que completar o seguinte desafio."
 
     pint "O desafio se trata de uma charada."
+
+    pint "O que é, o que é: quanto mais é pedida, menos valor tem?"
+
+    pagesh "Ah.. essa é muito fácil."
+    
+    pagesh "A resposta é..."
+
+    pagesh "Pizza!!"
+
+    "*barulho de magia*"
+
+    hide Pagesh
+
+    pint "Seu tolo!!"
+
+    pint "Você errou a charada e pagou a consequência."
+
+    nerkk "POR MELIM O QUE ACONTECEU????!!!"
+
+    auak "O Pagesh foi transformado numa fuinha, não tá vendo?"
+
+    ricas "E agora o que vamos fazer?"
+
+    nerkk "A gente tem que acertar a charada."
+
+    ricas "Eu acho que a resposta é:"
+
+    ricas  "Marmelada?"
+
+    "*barulho de magia ainda mais intensa que antes*"
+
+    hide ricardo
+    
+    pint "Não brinquem comigo crianças."
+
+    pint "Eu posso manter todos vocês nesse castelo, junto comigo."
+
+    pint "PARA SEMPRE!!"
+
+    nerkk "Por favor se acalme moça da pintura!"
+
+    nerkk "Eu vou responder mas..."
+
+    nerkk "Você tem que:"
+
+    menu:
+        "Você tem que:"
+        "Trazer meus amigos de volta.":
+            jump finale_auak
+        
+        "Me fazer ser o mais poderoso mago que já existiu.":
+            jump bad_ending_auak
+        
+        "Matar todos os meus inimigos.":
+            jump bad_ending_auak
+        
+        "Me transformar em imortal.":
+            jump bad_ending_auak
+
+label finale_auak:
+    scene castelo_inside
+
+    show pintura_mulher:
+        xpos 0.215
+        ypos 0.1
+    show nerkk at right
+    show auak at left
+    
+    
+
+    nerkk "Você tem que trazer meus amigos de volta a suas formas originais."
+
+    auak "Você realmente se importa com esses dois que você acabou de conhecer?"
+
+    nerkk "Sim, eu me importo."
+
+    nerkk "Mesmo que nos conheçamos a pouco tempo, as coisas que nós vivemos juntos me fazem ser leal a eles."
+
+    pint "Você acertou a charada."
+
+    pint "A resposta era: Lealdade."
+
+    pint "Por conta do seu ato genuíno de lealdade."
+
+    pint "Eu vou restaurar seus amigos as suas formas originais."
+
+    "*magia bondosa dessa vez*"
+
+    show ricardo:
+        xpos 0.6
+        ypos 0.3
+    show fuinha:
+        xpos 0.5
+        ypos 0.3
+
+    ricas "I'm back bitches!"
+
+    ricas "Ué, cadê o Pagesh?"
+
+    nerkk "Ei, você mentiu pra mim!"
+
+    nerkk "Imaginei que quem admira tanto a lealdade, seria fiel a sua palavra."
+
+    pint "Mas eu realizei uma magia de \"restauração a verdadeira forma\" nele."
+
+    nerkk "Será que isso signfica que..."
+
+    auak "Que ele sempre foi uma fuinha?"
+
+    auak "Sim, é isso que significa."
+
+    ricas "Que doideira."
+
+    pint "Enfim."
+
+    pint "Aqui está [pronome] [antidoto]"
 
     
 

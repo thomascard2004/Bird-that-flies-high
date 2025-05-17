@@ -320,6 +320,63 @@ label luta_final:
 
     auak "Eu quero, e muito!"
 
+    "*barulhos intensos de luta*"
+
+    ricas "Como ele pode ser tão forte assim?"
+
+    nerkk "Faz sentido. Se ele está por trás de tudo isso."
+
+    nerkk "Ele deve ser muito mais poderoso do que nós achamos."
+
+    auak "Graças ao Rotiv eu desbloqueei meu verdadei potencial usando amplificadores de magía."
+
+    auak "Agora vocês não podem me deter."
+
+    ricas "Isso não é ilegal?"
+
+    nerkk "Sim, amplificadores de magia roubam a magia de magos ao redor, e permite que você use como a sua própria."
+
+    nerkk "Isso é sujo, Auak"
+
+    auak "Eu não me importo desde que signifique que eu tenha poder máximo."
+
+    pagesh "Como podemos derrotar ele assim?"
+
+    nerkk "Se dermos tudo de si, nosso esforço será recompensado."
+
+    nerkk "Honestamente."
+
+    nerkk "A gente consegue vencer."
+
+    nerkk "Ele não tá com nada."
+
+    "*magia da amizade entrando em ação.*"
+
+    show auak deitado at left
+
+    nerkk "Conseguimos."
+
+    nerkk "Aquele que cuida de mim não dorme."
+
+    nerkk "Vamos voltar, amigos."
+
+    ricas "Você completa a missão Nerkk, nós vamos te teletransportar para a escola."
+
+    ricas "E provavelmente vamos desmaiar depois disso."
+
+    scene bg_exterior_saladeaula
+
+    show professor at truecenter
+
+    professor "Onde ele está?!!!"
+
+    show nerkk at right
+
+    nerkk "Aqui está professor!!"
+
+    nerkk "[pronome] [antidoto] coming right up!"
+
+    professor "Muito obrigado Nerkk, você salvou a escola!"
 
 
 

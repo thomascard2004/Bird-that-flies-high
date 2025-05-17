@@ -86,7 +86,7 @@ label cena_1_auak:
 label acertou_2_auak:
     prof "Muito bem! Você está corretíssimo! As únicas coisas que limitam a capacidade mágica de um mago são a sua criatividade e se ele possui magia o suficiente para realizar o ato mágico que deseja."
     
-    jump resto_2
+    jump resto_2_auak
 
 label errou_2_auak:
     prof "Isso sempre é importante, mas não é necessário ao realizar uma magia. As únicas coisas que limitam a capacidade mágica de um mago são a sua criatividade e se ele possui magia o suficiente para realizar o ato mágico que deseja."

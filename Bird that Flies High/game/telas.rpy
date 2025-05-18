@@ -12,6 +12,7 @@ label cap_2start:
 
     auak "Espero que sejamos capazes de encontrar logo o que buscamos. Você acha que vai ser muito difícil?"
 
+    "*barulho de vento forte*"
     play sound "vento.mp3"
     pause
 
@@ -55,7 +56,9 @@ label pedir_ajuda:
 
     ricas "Sim! É só fazer o vento no sentido contrário do furacão!"
 
+    "*barulho de vento forte*"
     play sound "vento.mp3"
+    
 
     nerkk "Está funcionando!"
 

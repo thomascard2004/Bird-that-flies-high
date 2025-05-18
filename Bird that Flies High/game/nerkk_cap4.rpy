@@ -88,14 +88,18 @@ label castelo_inside:
     show Pagesh:
         xpos 0.5
         ypos 0.3
+
+    play sound "porta.mp3"    
     "*barulho de portas se fechando*"
 
+    play sound "corneta.mp3"
     "*sons de corneta*"
 
     "Quatro desafiantes entraram no castelo."
 
     "Mas.. quantos irão sair?"
 
+    play sound "risada.mp3"
     "*risadas maléficas*"
 
     pagesh "O que foi isso?"
@@ -144,6 +148,7 @@ label castelo_inside:
 
     pagesh "Pizza!!"
 
+    play sound "magia.mp3"
     "*barulho de magia*"
 
     hide Pagesh
@@ -167,6 +172,7 @@ label castelo_inside:
 
     ricas  "Marmelada?"
 
+    play sound "magia.mp3"
     "*barulho de magia ainda mais intensa que antes*"
 
     hide ricardo
@@ -232,6 +238,7 @@ label finale:
 
     pint "Eu vou restaurar seus amigos as suas formas originais."
 
+    play sound "magia.mp3"
     "*magia bondosa dessa vez*"
 
     hide ricardo morto
@@ -335,6 +342,7 @@ label luta_final:
 
     auak "Eu quero, e muito!"
 
+    play sound "luta.mp3"
     "*barulhos intensos de luta*"
 
     ricas "Como ele pode ser tão forte assim?"
@@ -394,8 +402,74 @@ label luta_final:
 
     prof "Muito obrigado Nerkk, você salvou a escola!"
 
+    $ MainMenu(confirm=False)()
 
 
-    
+label bad_ending:
 
-            
+    scene castelo_inside
+
+    show nerkk at right
+    show auak at left
+    show fuinha:
+        xpos 0.5
+        ypos 0.4
+
+    show ricardo morto:
+        xpos 0.6
+        ypos 0.3
+
+    show pintura_mulher:
+        xpos 0.215
+        ypos 0.1
+
+    pint "IGNORANTE!"
+
+    pint "Você é um egoísta!"
+
+    pint "Que só pensa em benefício próprio."
+
+    pint "Você e seus amigos merecem perecer."
+
+    jump castelo_inside
+
+label bad_ending2:
+
+    scene castelo_inside
+
+    show pintura_mulher:
+        xpos 0.215
+        ypos 0.1
+
+    show nerkk at right
+    show auak ataque at left
+
+    show fuinha:
+        xpos 0.5
+        ypos 0.4
+
+    show ricardo:
+        xpos 0.6
+        ypos 0.3
+
+    nerkk "Não tem nada que a gente possa fazer."
+
+    nerkk "Não sou capaz de lutar contra ele."
+
+    nerkk "Acho que só temos uma opção."
+
+    nerkk "Desistir."
+
+    ricas "Não."
+
+    ricas "Não vamos fazer assim."
+
+    ricas "Nós somos capazes."
+
+    ricas "Você não precisa dele."
+
+    ricas "Você tem a gente agora."
+
+    ricas "A gente consegue!"
+
+    jump luta_final

@@ -67,7 +67,7 @@ label pedir_ajuda:
     show auak at right
     show nerkk:
         xpos 0.8
-        ypos 0.7
+        ypos 0.3
     show ricardo at left
     show Pagesh:
         xpos 0.2

@@ -22,6 +22,21 @@ label cap_4start_auak:
 
     nerkk "O professor me deu esse totem."
 
+    scene bg_totem
+
+    pause
+
+    scene castelo
+
+    show nerkk at right
+    show auak at left
+    show ricardo:
+        xpos 0.6
+        ypos 0.3
+    show Pagesh:
+        xpos 0.1
+        ypos 0.3
+
     nerkk "E disse que eu ia saber quando usar..."
 
     nerkk "O que vocês acham?"
@@ -48,6 +63,9 @@ label castelo_rebuild_auak:
     show auak at left
     show ricardo:
         xpos 0.6
+        ypos 0.3
+    show Pagesh:
+        xpos 0.1
         ypos 0.3
 
     auak "DEU CERTO!!"
@@ -114,7 +132,7 @@ label castelo_inside_auak:
 
     pagesh "Como assim?"
 
-    pint "Para conseguirem [pronome] [antidoto], vocês teram que completar o seguinte desafio."
+    pint "Para conseguirem [pronome] [antidoto], vocês terão que completar o seguinte desafio."
 
     pint "O desafio se trata de uma charada."
 
@@ -129,18 +147,21 @@ label castelo_inside_auak:
     "*barulho de magia*"
 
     hide Pagesh
+    show fuinha:
+        xpos 0.5
+        ypos 0.4
 
     pint "Seu tolo!!"
 
     pint "Você errou a charada e pagou a consequência."
 
-    nerkk "POR MELIM O QUE ACONTECEU????!!!"
+    nerkk "POR MERLIM O QUE ACONTECEU????!!!"
 
     auak "O Pagesh foi transformado numa fuinha, não tá vendo?"
 
     ricas "E agora o que vamos fazer?"
 
-    nerkk "A gente tem que acertar a charada."
+    auak "A gente tem que acertar a charada."
 
     ricas "Eu acho que a resposta é:"
 
@@ -149,6 +170,9 @@ label castelo_inside_auak:
     "*barulho de magia ainda mais intensa que antes*"
 
     hide ricardo
+    show ricardo morto:
+        xpos 0.6
+        ypos 0.3
     
     pint "Não brinquem comigo crianças."
 
@@ -156,25 +180,35 @@ label castelo_inside_auak:
 
     pint "PARA SEMPRE!!"
 
-    nerkk "Por favor se acalme moça da pintura!"
+    auak "Por favor se acalme moça da pintura!"
 
-    nerkk "Eu vou responder mas..."
+    auak "Eu vou responder mas..."
 
-    nerkk "Você tem que:"
+    auak "Você tem que:"
 
     menu:
         "Você tem que:"
         "Trazer meus amigos de volta.":
-            jump finale_auak
+            jump bad_ending_auak
         
         "Me fazer ser o mais poderoso mago que já existiu.":
-            jump bad_ending_auak
+            jump finale_auak
         
         "Matar todos os meus inimigos.":
             jump bad_ending_auak
         
         "Me transformar em imortal.":
             jump bad_ending_auak
+
+label bad_ending_auak:
+    pint "Hmmm.... Acho que depende apenas de você. Você tem que acertar a charada."
+
+    auak "Não sei... Amizade?"
+
+    hide auak 
+
+    "Você morreu. Tente novamente."
+    jump castelo_inside_auak
 
 label finale_auak:
     scene castelo_inside
@@ -183,17 +217,29 @@ label finale_auak:
         xpos 0.215
         ypos 0.1
     show nerkk at right
-    show auak at left
+    show auak ataque at left
+    show fuinha:
+        xpos 0.5
+        ypos 0.4
+    show ricardo morto:
+        xpos 0.6
+        ypos 0.3
     
     
 
-    nerkk "Você tem que trazer meus amigos de volta a suas formas originais."
+    auak "Você tem que me fazer o mago mais poderoso que o mundo já viu."
 
-    auak "Você realmente se importa com esses dois que você acabou de conhecer?"
+    nerkk "O que você tá fazendo Auak?"
 
-    nerkk "Sim, eu me importo."
+    auak "O que eu vim aqui fazer."
 
-    nerkk "Mesmo que nos conheçamos a pouco tempo, as coisas que nós vivemos juntos me fazem ser leal a eles."
+    auak "Tudo que aconteceu foi para trazer a gente aqui. Eu só precisava do totem para reerguer esse castelo. E o jeito mais fácil de consegui-lo?"
+
+    auak "Causar o caos na escola. Nem precisei pedir ao professor."
+
+    nerkk "Como assim Auak?!"
+
+    auak "Você vai ter duas opções: mostrar sua lealdade para mim ou morrer."
 
     pint "Você acertou a charada."
 
@@ -201,39 +247,123 @@ label finale_auak:
 
     pint "Por conta do seu ato genuíno de lealdade."
 
-    pint "Eu vou restaurar seus amigos as suas formas originais."
+    pint "Eu vou torná-lo no ser mágico mais poderoso que o mundo já viu."
 
-    "*magia bondosa dessa vez*"
+    "*magia ensurdecedora*"
 
-    show ricardo:
-        xpos 0.6
-        ypos 0.3
+    hide auak
+    with dissolve
+    show auak super at left
+    with dissolve
+
+    menu:
+        "O que fazer?"
+
+        "Deixá-los ir.":
+            jump bad_ending2_auak
+        
+        "Acabar com eles!":
+            jump luta_final_auak
+
+label luta_final_auak:
+
+    scene castelo_inside
+
+    show auak super at left
+
+    show nerkk ataque at right
+
     show fuinha:
         xpos 0.5
         ypos 0.3
+    
+    
 
-    ricas "I'm back bitches!"
+    nerkk "Eu não quero fazer isso Auak, sai da frente."
 
-    ricas "Ué, cadê o Pagesh?"
+    auak "Eu quero, e muito!"
 
-    nerkk "Ei, você mentiu pra mim!"
+    "*barulhos intensos de luta*"
 
-    nerkk "Imaginei que quem admira tanto a lealdade, seria fiel a sua palavra."
+    pagesh "Como ele pode ser tão forte assim?"
 
-    pint "Mas eu realizei uma magia de \"restauração a verdadeira forma\" nele."
+    nerkk "Faz sentido. Se ele está por trás de tudo isso."
 
-    nerkk "Será que isso signfica que..."
+    nerkk "Ele deve ser muito mais poderoso do que nós achamos."
 
-    auak "Que ele sempre foi uma fuinha?"
+    auak "Graças ao Rotiv eu desbloqueei meu verdadei potencial usando amplificadores de magia."
 
-    auak "Sim, é isso que significa."
+    auak "Mas agora com essa forma, vocês não podem me deter."
 
-    ricas "Que doideira."
+    ricas "Isso não é ilegal?"
 
-    pint "Enfim."
+    nerkk "Sim, amplificadores de magia roubam a magia de magos ao redor, e permite que você use como a sua própria."
 
-    pint "Aqui está [pronome] [antidoto]"
+    nerkk "Isso é sujo, Auak"
 
+    auak "Eu não me importo desde que signifique que eu tenha poder máximo."
+
+    pagesh "Como podemos derrotar ele assim?"
+
+    nerkk "Se dermos tudo de si, nosso esforço será recompensado."
+
+    nerkk "Honestamente."
+
+    nerkk "A gente consegue vencer."
+
+    nerkk "Ele não tá com nada."
+
+    "*magia da amizade entrando em ação.*"
+
+    hide nerkk ataque
+    hide fuinha
+
+    auak "HAHAHAHAHAH. Pobres coitados."
+
+    auak "Agora nada poderá me deter."
+
+    auak "Com a escola em apuros e com esse poder, eu serei invencível."
+
+    "FIM DE JOGO"
+
+    return
+
+
+label bad_ending2_auak:
+    auak "Vocês podem ir."
+
+    nerkk "Vamos Pagesh! Ainda vamos conseguir salvar a escola."
+
+    scene bg_exterior_saladeaula
+
+    show professor grande abaixado at left
+
+    prof "Onde ele está?!!!"
+
+    show nerkk at right
+    show fuinha:
+        xpos 0.6
+        ypos 0.4
+
+    nerkk "Aqui está prof!!"
+
+    nerkk "[pronome] [antidoto] coming right up!"
+
+    prof "Muito obrigado Nerkk, você salvou a escola!"
+
+    prof "Onde está Auak? E quem é essa fuinha?"
+
+    nerkk "O Auak se tornou um ser muito perigoso professor. Sozinhos não tinhamos chance de vencer."
+
+    prof "Para saber a verdadeira natureza de alguém, dê-lhe poder. Agora com a escola reestaurada, pode ter certeza que ele sofrerá com as consequências."
+
+    pagesh "Ainda bem. Meu amigo Kuracier se foi para sempre. "
+
+    prof "Não tema, jovem. Seu amigo será vingado."
+
+    "FIM DE JOGO"
+
+    return 
     
 
             

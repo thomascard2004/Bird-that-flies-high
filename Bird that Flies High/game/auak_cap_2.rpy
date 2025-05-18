@@ -72,8 +72,8 @@ label causar_furacao:
     hide nerkk ataque
 
     show auak at right
-    show auak:
-        xpos 0.4
+    show nerkk:
+        xpos 0.3
         ypos 0.3
     show ricardo at left
     show Pagesh:

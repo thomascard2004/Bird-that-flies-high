@@ -7,6 +7,9 @@ label cap_3_auak:
     show ricardo:
         xpos 0.6
         ypos 0.3
+    show Pagesh:
+        xpos 0.1
+        ypos 0.3
 
     auak "Pelas palavras do professor, acho que devemos seguir nessa direção"
 
@@ -34,6 +37,9 @@ label ave_auak:
 
     show nerkk at right
     show ricardo at left
+    show Pagesh:
+        xpos 0.1
+        ypos 0.3
 
     "Um súbito bater de asas chama a atenção do grupo."
     show falcao_voando at truecenter
@@ -81,7 +87,10 @@ label caminho_lago_auak:
     hide falcao_parado
     show auak:
         xpos 0.6
-        ypos 0.3    
+        ypos 0.3 
+    show Pagesh:
+        xpos 0.1
+        ypos 0.3   
 
     auak "Ufa... consegui alcançar voces. Vamos pelo lago né? Um passaro estranho me falou que era meio perigoso..."
     ricas "Ah... ele deve estar exagerando só!"
@@ -112,6 +121,9 @@ label tp_floresta_auak:
     show auak:
         xpos 0.6
         ypos 0.3 
+    show Pagesh:
+        xpos 0.1
+        ypos 0.3
 
 
     ricas "Um teleporte? É arriscado, Auak. Podemos parar em qualquer lugar."
@@ -131,6 +143,9 @@ label caminho_floresta_auak:
     show auak:
         xpos 0.6
         ypos 0.3
+    show Pagesh:
+        xpos 0.1
+        ypos 0.3
 
     pagesh "Cuidado onde pisam e com o que tocam."
     "Vocês adentram mais a fundo na floresta. Após alguma caminhada, encontram árvores com frutas exóticas e brilhantes."
@@ -145,6 +160,9 @@ label Frutas_auak:
     show ricardo at left
     show auak:
         xpos 0.6
+        ypos 0.3
+    show Pagesh:
+        xpos 0.1
         ypos 0.3
 
     ricas "Olha!!! Que frutas são essas? Parecem uma delícia...."
@@ -188,10 +206,13 @@ label nao_comer_fruta_magica_auak:
 
 label evento_fenix_auak:
     scene Fenix 
-    show nerkk at right
+    show nerkk ataque at right
     show ricardo ataque at left
-    show auak:
-        xpos 0.6
+    show auak ataque:
+        xpos 0.5
+        ypos 0.3
+    show Pagesh ataque:
+        xpos 0.3
         ypos 0.3
 
     "O ar se enche de cinzas e o calor é abrasador. Chamas mágicas, como uma tempestade invocada por uma Fênix, cercam vocês!"

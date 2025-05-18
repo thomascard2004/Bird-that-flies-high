@@ -244,7 +244,7 @@ label esconder_nerkk:
 
     auak "NERKK VOLTA AQUI!"
 
-    show nerkk
+    show nerkk at right
     with dissolve
 
     prof "Eu descobri o que foi. Nerkk, vem comigo."
@@ -256,6 +256,8 @@ label xixi:
     with dissolve
 
     play sound "xixi.mp3"
+
+    "**pssss**"
 
     prof "Que barulho é esse?"
 
@@ -279,16 +281,19 @@ label acontecimento_1:
 
             jump opcao_1
         "Raízes Mágicas descontroladas sairam da estufa.":
+            $ causa = "Raízes Mágicas"
             $ pronome = "o"
             $ antidoto = "Pergaminho"
             jump opcao_2
             
         "Alguém roubou um pergaminho almadiçoado na biblioteca.":
+            $ causa = "Pergaminho"
             $ pronome = "o"
             $ antidoto = "Pergaminho"
             jump opcao_3
 
         "Todos os professores viraram estátua":
+            $ causa = ""
             $ pronome = "a"
             $ antidoto = "Lagrima da Medusa"
             jump opcao_4

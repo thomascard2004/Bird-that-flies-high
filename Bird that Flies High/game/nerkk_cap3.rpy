@@ -171,7 +171,7 @@ label Frutas:
         ypos 0.3
 
     ricas "Olha!!! Que frutas são essas? Parecem uma delícia...."
-    pagesh "Desconfio de coisas que brilham demais na natureza, Ricas."
+    pagesh "Desconfio de coisas que brilham demais na natureza, Kuracier."
 
     menu comer_fruta_escolha:
         "Comer a fruta mágica.":
@@ -183,8 +183,8 @@ label Frutas:
 label comer_fruta_magica:
 
     ricas "Ah, qual é o problema? Só uma mordidinha..."
-    "Ricas pega uma fruta e a morde."
-    "Quase que instantaneamente, Ricas começa a passar mal, engasgando e caindo ao chão."
+    "Kuracier pega uma fruta e a morde."
+    "Quase que instantaneamente, Kuracier começa a passar mal, engasgando e caindo ao chão."
 
 
     hide ricardo

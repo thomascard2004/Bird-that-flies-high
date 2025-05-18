@@ -47,6 +47,7 @@ image auak = Transform("auak_sf.png", zoom=1.3)
 image auak deitado = Transform("auak_sf.png", zoom=1.3, rotate=90)
 image auak ataque = Transform("personagens/auak_ataque.png", zoom = 1.3)
 image auak triste = Transform("personagens/auak_triste.png", zoom=1.3)
+image auak super = Transform("personagens/auak_super.png", zoom=1.3)
 
 image falcao_voando = Transform("personagens/falcao_voando_sf.png", zoom=0.8)
 image falcao_parado = Transform("personagens/falcao_parado_sf.png", zoom=0.8)

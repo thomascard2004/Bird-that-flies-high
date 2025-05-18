@@ -132,7 +132,7 @@ label castelo_inside:
 
     pagesh "Como assim?"
 
-    pint "Para conseguirem [pronome] [antidoto], vocês teram que completar o seguinte desafio."
+    pint "Para conseguirem [pronome] [antidoto], vocês terão que completar o seguinte desafio."
 
     pint "O desafio se trata de uma charada."
 
@@ -155,7 +155,7 @@ label castelo_inside:
 
     pint "Você errou a charada e pagou a consequência."
 
-    nerkk "POR MELIM O QUE ACONTECEU????!!!"
+    nerkk "POR MERLIM O QUE ACONTECEU????!!!"
 
     auak "O Pagesh foi transformado numa fuinha, não tá vendo?"
 
@@ -278,7 +278,7 @@ label finale:
     
     nerkk "Como assim Auak, para de brincadeira!!"
 
-    nerkk "Temos que voltar logo para deter [pronome] [causa]"
+    nerkk "Temos que voltar logo para salvar a escola!."
 
     auak "E deixar que vocês acabem com o meu plano?"
 
@@ -319,11 +319,11 @@ label luta_final:
 
     scene castelo_inside
 
-    show auak_ataque at left
+    show auak ataque at left
 
     show nerkk ataque at right
 
-    show Pagesh ataque:
+    show fuinha:
         xpos 0.5
         ypos 0.3
     
@@ -343,7 +343,7 @@ label luta_final:
 
     nerkk "Ele deve ser muito mais poderoso do que nós achamos."
 
-    auak "Graças ao Rotiv eu desbloqueei meu verdadei potencial usando amplificadores de magía."
+    auak "Graças ao Rotiv eu desbloqueei meu verdadei potencial usando amplificadores de magia."
 
     auak "Agora vocês não podem me deter."
 
@@ -382,7 +382,7 @@ label luta_final:
 
     scene bg_exterior_saladeaula
 
-    show professor abaixado at left
+    show professor grande abaixado at left
 
     prof "Onde ele está?!!!"
 

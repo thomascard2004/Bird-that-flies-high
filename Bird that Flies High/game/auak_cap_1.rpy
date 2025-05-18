@@ -221,6 +221,8 @@ label xixi_auak:
 
     play sound "xixi.mp3"
 
+    "**pssss**"
+
     prof "Que barulho é esse?"
 
     nerkk "Nada professor... Conseguiu descobrir o que aconteceu?"
@@ -263,6 +265,18 @@ label opcao_1_auak:
 
     prof "Uma última coisa. Leve este totem. Você saberá quando usá-lo."
 
+    scene bg_totem
+
+    pause
+
+    scene poppotino
+
+    show auak:
+        xpos 0.2
+        ypos 0.3
+
+    show professor grande abaixado at center
+
     prof "Agora vá de uma vez, mas não vá sozinho!"
 
     scene bg_saladeaula
@@ -299,6 +313,16 @@ label opcao_2_auak:
 
     prof "Uma última coisa. Leve este totem. Você saberá quando usá-lo."
 
+    scene bg_totem
+
+    pause
+
+    scene raizes
+
+    show auak at left 
+
+    show professor grande abaixado at center
+
     prof "Agora vá de uma vez, mas não vá sozinho!"
 
     scene bg_saladeaula
@@ -334,6 +358,16 @@ label opcao_3_auak:
     prof "Eu preciso que você vá até o castelo desolado de Bacallister e busque o pergaminho irmão que contém o feitiço que irá destruir o pergaminho dessa escola. Eles ficam separados para permitir que possamos nos defender caso o nosso pergaminho desapareça."
 
     prof "Uma última coisa. Leve este totem. Você saberá quando usá-lo."
+
+    scene bg_totem
+
+    pause
+
+    scene biblioteca
+
+    show auak at left 
+
+    show professor grande abaixado at right
 
     prof "Agora vá de uma vez, mas não vá sozinho!"
 
@@ -372,6 +406,16 @@ label opcao_4_auak:
     prof "Eu preciso que você vá até o castelo desolado de Bacallister e busque a lágrima de medusa. Somente com ela podemos trazê-los de volta."
 
     prof "Uma última coisa. Leve este totem. Você saberá quando usá-lo."
+
+    scene bg_totem
+
+    pause
+
+    scene professores
+
+    show auak at left 
+
+    show professor grande abaixado at right
 
     prof "Agora vá de uma vez, mas não vá sozinho!"
 

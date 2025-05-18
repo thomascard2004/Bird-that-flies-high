@@ -308,6 +308,17 @@ label opcao_1:
 
     prof "Uma última coisa. Leve este totem. Você saberá quando usá-lo."
 
+    scene bg_totem
+
+    pause
+
+    scene poppotino
+
+    show nerkk at left 
+
+    show professor grande abaixado at center
+
+
     prof "Agora vá de uma vez, mas não vá sozinho!"
 
     scene bg_saladeaula
@@ -323,7 +334,7 @@ label opcao_1:
 
     nerkk "Eu te explico no caminho...."
 
-    jump cap_2start_nerkk
+    jump cap_2start
 
 label opcao_2:
     scene raizes
@@ -342,6 +353,17 @@ label opcao_2:
 
     prof "Uma última coisa. Leve este totem. Você saberá quando usá-lo."
 
+    scene bg_totem
+
+    pause
+
+    scene raizes
+
+    show nerkk at left 
+
+    show professor grande abaixado at center
+
+
     prof "Agora vá de uma vez, mas não vá sozinho!"
 
     scene bg_saladeaula
@@ -357,7 +379,7 @@ label opcao_2:
 
     nerkk "Eu te explico no caminho...."
 
-    jump cap_2start_nerkk
+    jump cap_2start
 
 label opcao_3:
     scene biblioteca
@@ -376,6 +398,17 @@ label opcao_3:
 
     prof "Uma última coisa. Leve este totem. Você saberá quando usá-lo."
 
+    scene bg_totem
+
+    pause
+
+    scene biblioteca
+
+    show nerkk at left 
+
+    show professor grande abaixado at center
+
+
     prof "Agora vá de uma vez, mas não vá sozinho!"
 
     scene bg_saladeaula
@@ -392,7 +425,7 @@ label opcao_3:
     nerkk "Eu te explico no caminho...."
 
 
-    jump cap_2start_nerkk
+    jump cap_2start
 
 label opcao_4:
     scene professores
@@ -415,6 +448,16 @@ label opcao_4:
 
     prof "Uma última coisa. Leve este totem. Você saberá quando usá-lo."
 
+    scene bg_totem
+
+    pause
+
+    scene professores
+
+    show nerkk at left 
+
+    show professor grande abaixado at center
+
     prof "Agora vá de uma vez, mas não vá sozinho!"
 
     scene bg_saladeaula
@@ -431,4 +474,4 @@ label opcao_4:
     nerkk "Eu te explico no caminho...."
 
 
-    jump cap_2start_nerkk
+    jump cap_2start

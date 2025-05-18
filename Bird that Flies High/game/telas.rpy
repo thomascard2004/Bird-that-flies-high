@@ -65,9 +65,9 @@ label pedir_ajuda:
     hide nerkk ataque
 
     show auak at right
-    show auak:
-        xpos 0.4
-        ypos 0.3
+    show nerkk:
+        xpos 0.8
+        ypos 0.7
     show ricardo at left
     show Pagesh:
         xpos 0.2

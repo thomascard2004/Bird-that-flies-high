@@ -22,6 +22,21 @@ label cap_4start:
 
     nerkk "O prof me deu esse totem."
 
+    scene bg_totem
+
+    pause
+
+    scene castelo
+
+    show nerkk at right
+    show auak at left
+    show ricardo:
+        xpos 0.6
+        ypos 0.3
+    show Pagesh:
+        xpos 0.1
+        ypos 0.3
+
     nerkk "E disse que eu ia saber quando usar..."
 
     nerkk "O que vocês acham?"
@@ -352,7 +367,7 @@ label luta_final:
 
     "*magia da amizade entrando em ação.*"
 
-    hide auak
+    hide auak ataque
     show auak deitado at left
 
     nerkk "Conseguimos."

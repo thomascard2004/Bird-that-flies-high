@@ -23,6 +23,7 @@ image professores = Transform("bgs/professores.png", zoom=1.3)
 image restaurante = Transform("bgs/restaurante_arvore_impressionista.png", zoom=1.3)
 image restaurante quebrado = Transform("bgs/restaurante_arvore_impressionista_quebrado.png", zoom=1.3)
 image restaurante exterior = Transform("bgs/restaurante_exterior.png", zoom=1.3)
+image bg_totem = Transform("bgs/totem.png", zoom = 1.3)
 
 
 image fuinha = Transform("personagens/fuinha.png", zoom = 0.8) 

@@ -323,7 +323,7 @@ label opcao_1:
 
     nerkk "Eu te explico no caminho...."
 
-    jump cap_2start
+    jump cap_2start_nerkk
 
 label opcao_2:
     scene raizes
@@ -357,7 +357,7 @@ label opcao_2:
 
     nerkk "Eu te explico no caminho...."
 
-    jump cap_2start
+    jump cap_2start_nerkk
 
 label opcao_3:
     scene biblioteca
@@ -392,7 +392,7 @@ label opcao_3:
     nerkk "Eu te explico no caminho...."
 
 
-    jump cap_2start    
+    jump cap_2start_nerkk
 
 label opcao_4:
     scene professores
@@ -431,4 +431,4 @@ label opcao_4:
     nerkk "Eu te explico no caminho...."
 
 
-    jump cap_2start    
+    jump cap_2start_nerkk

@@ -555,6 +555,18 @@ screen about():
 
         vbox:
 
+            text _("Esse jogo foi produzido para a disciplina do Programa de Engenharia de Sistemas e Computação (PESC) UFRJ.\n")
+
+            text _("Participantes do Projeto:\n")
+
+            text _("Enzo Fernandes Vieira")
+
+            text _("Leonardo Peres Albertazzi Drummond")
+
+            text _("Ricardo Lorente Kauer")
+
+            text _("Thomas Cardoso Miranda\n\n\n")
+
             label "[config.name!t]"
             text _("Version [config.version!t]\n")
 

@@ -21,6 +21,7 @@ O desenvolvimento do projeto foi uma oportunidade de transformar experiências p
   <img src="auak_sf.png" alt="Auak" width="20%" />
   <img src="rickauer_sf.png" alt="Rickauer" width="20%" />
   <img src="Pagesh.png" alt="Pagesh" width="20%" />
+  <img src="xexas.png" alt="Xexas" width="20%" />
 </div>
 
 > “Às vezes, as melhores ideias nascem quando estamos dormindo — ou enfrentando a vida acordados.”

@@ -2,6 +2,11 @@
 
 *Bird That Flies High* é um jogo criado como parte da disciplina **Projeto de Jogos**, ministrada pelo professor **Geraldo Xéxeo**.
 
+## Integrantes do Grupo
+
+Ricardo Kauer
+Enzo Sampaio
+
 A proposta do trabalho pedia que, de alguma maneira, o jogo incorporasse elementos do **Impressionismo** — seja na estética visual, na narrativa ou na atmosfera. Essa diretriz foi fundamental para guiar o estilo artístico e o tom sensível da experiência.
 
 A inspiração para o jogo veio da combinação de um sonho que eu tives e acontecimentos reais da minha vida. Esses elementos se uniram para formar a base do conceito, da estética e da mecânica do jogo. O resultado é uma experiência que mistura emoção, desafio e reflexão de forma leve e envolvente.
@@ -16,12 +21,34 @@ O desenvolvimento do projeto foi uma oportunidade de transformar experiências p
 
 ## Personagens
 
-<div style="display: flex; gap: 10px;">
-  <img src="thomas_sf.png" alt="Thomas" width="20%" />
-  <img src="auak_sf.png" alt="Auak" width="20%" />
-  <img src="rickauer_sf.png" alt="Rickauer" width="20%" />
-  <img src="Pagesh.png" alt="Pagesh" width="20%" />
-  <img src="xexas.png" alt="Xexas" width="20%" />
+<div style="display: flex; gap: 10px; justify-content: center; text-align: center;">
+
+  <div>
+    <h4>Thomas</h4>
+    <img src="thomas_sf.png" alt="Thomas" width="20%" />
+  </div>
+
+  <div>
+    <h4>Auak</h4>
+    <img src="auak_sf.png" alt="Auak" width="20%" />
+  </div>
+
+  <div>
+    <h4>Rickauer</h4>
+    <img src="rickauer_sf.png" alt="Rickauer" width="20%" />
+  </div>
+
+  <div>
+    <h4>Pagesh</h4>
+    <img src="Pagesh.png" alt="Pagesh" width="20%" />
+  </div>
+
+  <div>
+    <h4>Professor</h4>
+    <img src="xexas.png" alt="Xexas" width="20%" />
+  </div>
+
 </div>
+
 
 > “Às vezes, as melhores ideias nascem quando estamos dormindo — ou enfrentando a vida acordados.”

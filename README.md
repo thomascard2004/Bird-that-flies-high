@@ -25,27 +25,27 @@ O desenvolvimento do projeto foi uma oportunidade de transformar experiências p
 
   <div style="width: 20%;">
     <h4>Thomas</h4>
-    <img src="thomas_sf.png" alt="Thomas" style="width: 100%;" />
+    <img src="thomas_sf.png" alt="Thomas" style="width: 20%;" />
   </div>
 
   <div style="width: 20%;">
     <h4>Auak</h4>
-    <img src="auak_sf.png" alt="Auak" style="width: 100%;" />
+    <img src="auak_sf.png" alt="Auak" style="width: 20%;" />
   </div>
 
   <div style="width: 20%;">
     <h4>Rickauer</h4>
-    <img src="rickauer_sf.png" alt="Rickauer" style="width: 100%;" />
+    <img src="rickauer_sf.png" alt="Rickauer" style="width: 20%;" />
   </div>
 
   <div style="width: 20%;">
     <h4>Pagesh</h4>
-    <img src="Pagesh.png" alt="Pagesh" style="width: 100%;" />
+    <img src="Pagesh.png" alt="Pagesh" style="width: 20%;" />
   </div>
 
   <div style="width: 20%;">
     <h4>Xexas</h4>
-    <img src="xexas.png" alt="Xexas" style="width: 100%;" />
+    <img src="xexas.png" alt="Xexas" style="width: 20%;" />
   </div>
 
 </div>

@@ -16,9 +16,11 @@ O desenvolvimento do projeto foi uma oportunidade de transformar experiências p
 
 ## Personagens
 
-<img src="thomas_sf.png" alt="Thomas" width="20%" />
-<img src="auak_sf.png" alt="Auak" width="20%" />
-<img src="rickauer_sf.png" alt="Rickauer" width="20%" />
-<img src="Pagesh.png" alt="Pagesh" width="20%" />
+<div style="display: flex; gap: 10px;">
+  <img src="thomas_sf.png" alt="Thomas" width="20%" />
+  <img src="auak_sf.png" alt="Auak" width="20%" />
+  <img src="rickauer_sf.png" alt="Rickauer" width="20%" />
+  <img src="Pagesh.png" alt="Pagesh" width="20%" />
+</div>
 
 > “Às vezes, as melhores ideias nascem quando estamos dormindo — ou enfrentando a vida acordados.”

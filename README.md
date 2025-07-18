@@ -10,9 +10,9 @@ O desenvolvimento do projeto foi uma oportunidade de transformar experiências p
 
 ## Integrantes do Grupo
 
-Thomas Cardoso
-Ricardo Kauer
-Enzo Sampaio
+- Thomas Cardoso
+- Ricardo Kauer
+- Enzo Sampaio
 
 ## Cenários 
 *Castelo em Ruínas* é um exemplo de uma obra original do período impressionismo, que incorporamos no projeto. Outros cenários como por exemplo a sala de aula, ou a biblioteca da escola, foram criadas com auxílio de **Inteligência Artficial**, com o prompt pedindo que seguissem o estilo artístico impressionista.

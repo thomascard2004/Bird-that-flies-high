@@ -29,4 +29,7 @@ O desenvolvimento do projeto foi uma oportunidade de transformar experiências p
   <img src="xexas.png" alt="Xexas" width="20%" />
 </div>
 
+
+
+
 > “Às vezes, as melhores ideias nascem quando estamos dormindo — ou enfrentando a vida acordados.”

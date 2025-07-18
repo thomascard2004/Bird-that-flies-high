@@ -23,32 +23,31 @@ O desenvolvimento do projeto foi uma oportunidade de transformar experiências p
 
 <div style="display: flex; gap: 10px; justify-content: center; text-align: center;">
 
-  <div>
+  <div style="width: 20%;">
     <h4>Thomas</h4>
-    <img src="thomas_sf.png" alt="Thomas" width="20%" />
+    <img src="thomas_sf.png" alt="Thomas" style="width: 100%;" />
   </div>
 
-  <div>
+  <div style="width: 20%;">
     <h4>Auak</h4>
-    <img src="auak_sf.png" alt="Auak" width="20%" />
+    <img src="auak_sf.png" alt="Auak" style="width: 100%;" />
   </div>
 
-  <div>
+  <div style="width: 20%;">
     <h4>Rickauer</h4>
-    <img src="rickauer_sf.png" alt="Rickauer" width="20%" />
+    <img src="rickauer_sf.png" alt="Rickauer" style="width: 100%;" />
   </div>
 
-  <div>
+  <div style="width: 20%;">
     <h4>Pagesh</h4>
-    <img src="Pagesh.png" alt="Pagesh" width="20%" />
+    <img src="Pagesh.png" alt="Pagesh" style="width: 100%;" />
   </div>
 
-  <div>
-    <h4>Professor</h4>
-    <img src="xexas.png" alt="Xexas" width="20%" />
+  <div style="width: 20%;">
+    <h4>Xexas</h4>
+    <img src="xexas.png" alt="Xexas" style="width: 100%;" />
   </div>
 
 </div>
-
 
 > “Às vezes, as melhores ideias nascem quando estamos dormindo — ou enfrentando a vida acordados.”

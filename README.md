@@ -4,6 +4,7 @@
 
 ## Integrantes do Grupo
 
+Thomas Cardoso
 Ricardo Kauer
 Enzo Sampaio
 
